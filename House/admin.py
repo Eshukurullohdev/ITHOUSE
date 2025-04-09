@@ -1,3 +1,4 @@
 from django.contrib import admin
-
-# Register your models here.
+from House.models import *
+admin.site.register(profesional)
+admin.site.register(Teacher)

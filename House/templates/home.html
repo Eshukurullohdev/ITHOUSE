@@ -255,66 +255,18 @@
             <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
         </div>
         <div class="team_mates">
+            {% for oqituvchilar in oqituvchilar %}
             <div class="member">
                 <div class="member-avatar">
-                    <img src="{% static 'img/client03.jpg' %}" alt="team_mates" width="150" height="150">
+                    <img src="{{ oqituvchilar.image.url }}" alt="team_mates" width="150" height="150">
                 </div>
-                <h3 class="green-heading">Akhmedov Khusanboy</h3>
-                <p>Backend Developer</p>
+                <h3 class="green-heading">{{ oqituvchilar.fullname }}</h3>
+                <p>{{ oqituvchilar.job }}</p>
                 <a href="#"><i class="fa-brands fa-telegram"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </div>
-            <div class="member">
-                <div class="member-avatar">
-                    <img src="{% static 'img/client03.jpg' %}" alt="team_mates" width="150" height="150">
-                </div>
-                <h3 class="green-heading">Akhmedov Khusanboy</h3>
-                <p>Backend Developer</p>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-            <div class="member">
-                <div class="member-avatar">
-                    <img src="{% static 'img/client03.jpg' %}" alt="team_mates" width="150" height="150">
-                </div>
-                <h3 class="green-heading">Akhmedov Khusanboy</h3>
-                <p>Backend Developer</p>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-            <div class="member">
-                <div class="member-avatar">
-                    <img src="{% static 'img/client03.jpg' %}" alt="team_mates" width="150" height="150">
-                </div>
-                <h3 class="green-heading">Akhmedov Khusanboy</h3>
-                <p>Backend Developer</p>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-            <div class="member">
-                <div class="member-avatar">
-                    <img src="{% static 'img/client03.jpg' %}" alt="team_mates" width="150" height="150">
-                </div>
-                <h3 class="green-heading">Akhmedov Khusanboy</h3>
-                <p>Backend Developer</p>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-            <div class="member">
-                <div class="member-avatar">
-                    <img src="{% static 'img/client03.jpg' %}" alt="team_mates" width="150" height="150">
-                </div>
-                <h3 class="green-heading">Akhmedov Khusanboy</h3>
-                <p>Backend Developer</p>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
