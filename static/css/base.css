@@ -952,3 +952,318 @@ footer {
         font-size: 14px;
     }
 }
+
+
+/* Khumoyun */
+.wrapper h1 {
+    text-align: center;
+    font-size: 34px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    width: 350px;
+    height: 480px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+
+.number {
+    background-color: rgb(229, 27, 27);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    border-radius: 50%;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+}
+
+.number h1 {
+    margin: auto;
+    font-size: 16px;
+}
+
+.card h2 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.card img {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+.card img:hover {
+    transition: 1s ease all;
+    transform: scale(1.1);
+}
+
+.card h2 {
+    padding-right: 40px;
+    padding-top: 10px;
+    width: 282px;
+}
+
+.card_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.img1 {
+    rotate: 20deg;
+    margin-top: 20px;
+}
+
+.img2 {
+    position: relative;
+    top: -20px;
+}
+
+.img3 {
+    rotate: 20deg;
+}
+
+.card-mein {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 180px;
+}
+
+.card-m {
+    background: #fff;
+    border-radius: 20px;
+    width: 320px;
+    height: 155px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+    background: #f1f1f1;
+    margin-bottom: 100px;
+}
+
+.card-m h1 {
+    text-align: center;
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+.card-m p {
+    color: #fe0000;
+    font-size: 38px;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+
+
+@media (min-width: 150px) and (max-width: 500px) {
+    .card-wrapper {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+
+        margin: 0;
+    }
+
+    .card-mein {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card-m {
+        width: 85%;
+        margin: 0;
+    }
+
+    .card img {
+        width: 295px;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    .card-wrapper {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+
+        margin: 0;
+    }
+
+    .card-mein {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card-m {
+        width: 85%;
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 320px) {
+    .number {
+        height: 28px;
+        width: 39px;
+    }
+
+    .h2 {
+        width: 320px;
+    }
+
+    .img1 {
+        width: 220px;
+        object-fit: scale-down;
+
+    }
+
+    .card {
+        height: 450px;
+        padding-bottom: 30px;
+
+    }
+
+    .card img {
+        rotate: 0deg;
+    }
+
+    .img2 {
+        position: relative;
+        top: -80px;
+        width: 350px;
+        height: 50px;
+    }
+
+    .card3 img {
+        rotate: 15deg;
+        width: 240px;
+    }
+
+    .card2 img {
+        margin-top: 50px;
+    }
+
+    .card2 h2 {
+        font-size: 19px;
+    }
+
+    .card1 img {
+        width: 270px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 393px) {
+    .card3 img {
+        rotate: 15deg;
+        width: 250px;
+    }
+
+    .number {
+        height: 35px;
+        width: 40px;
+    }
+}
+
+@media (min-width: 412px) {
+    .card3 img {
+        rotate: 15deg;
+        width: 250px;
+    }
+
+    .number {
+        height: 35px;
+        width: 40px;
+    }
+}
+
+
+@media (min-width: 390px) {
+    .card1 img {
+        rotate: 20deg;
+
+    }
+}
+
+@media (min-width: 428px) {
+    .card1 img {
+        rotate: 20deg;
+        width: 290px;
+    }
+}
+
+
+@media (min-width: 1114px) {
+    .card img {
+        object-fit: contain;
+    }
+
+    .card {
+        margin: 0;
+    }
+}
+
+@media (max-width: 197px) {
+    .card img {
+        rotate: 0deg;
+        height: 100px;
+        width: 80%;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .card_flex {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .card img {
+        right: 0deg;
+    }
+
+    .card h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .number {
+        height: 25px;
+        width: 75px;
+        margin-left: 20px;
+    }
+
+}

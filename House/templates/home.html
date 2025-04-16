@@ -12,32 +12,67 @@
     <img src="{% static 'img/intro.png' %}" alt="" width="560" height="514">
 </section>
 <section id="section_2">
-    <div class="section_main container">
-        <div class="section_2-mini">
-            <div class="red-shape">
-                <img src="{% static 'img/expert.svg' %}" alt="expert" width="32" height="32">
+    <main>
+
+        <div class="wrapper">
+            <h1>IT HOUSE qanday ishlaydi?</h1>
+            <div class="card-wrapper">
+                <div class="card card1">
+                    <div class="card_flex">
+
+                        <div class="number">
+                            <h1>1</h1>
+                        </div>
+                        <h2 class="h2">O'zingizga mos <br> kursni tanlaysiz</h2>
+                    </div>
+                    <img src="static/img/photo 1.webp" alt="Kurs tanlash rasmi" class="img1">
+                </div>
+                <div class="card card2">
+                    <div class="card_flex card2">
+
+                        <div class="number">
+                            <h1>2</h1>
+                        </div>
+                        <h2>Berilgan darslarni <br> o'rganib, vazifalarni <br> bajarasiz.
+                        </h2>
+                    </div>
+                    <img src="static/img/photo 2.webp" alt="Kurs tanlash rasmi" class="img2">
+                </div>
+                <div class="card card3">
+                    <div class="card_flex">
+
+                        <div class="number">
+                            <h1>3</h1>
+                        </div>
+                        <h2 class="h22">Kurs ohirida <br> sertifikatga ega bo'lasiz</h2>
+                    </div>
+                    <img src="static/img/photo 3.png" alt="Kurs tanlash rasmi" class="img3">
+                </div>
+
             </div>
-            <h4>Foydalanuvchilar uchun qulay darslar</h4>
-            <hr>
-            <p>Ingliz tili va IT bo‘yicha asosiy tushunchalarni o‘rganish uchun mukammal o'quv kurslari.</p>
-        </div>
-        <div class="section_2-mini">
-            <div class="red-shape">
-                <img src="{% static 'img/training.svg' %}" alt="course" width="32" height="32">
+            <div class="card-mein">
+                <div class="card-m">
+                    <h1>Umumiy o'quvchilar soni
+                        <p class="jsp">0</p>
+                    </h1>
+
+                </div>
+                <div class="card-m">
+                    <h1>Yozilgan darslar soni
+                        <p class="jsp1">+0</p>
+                    </h1>
+
+                </div>
+                <div class="card-m">
+                    <h1>O'rtacha jamoaviy tajriba
+                        <p class="jsp2">0</p>
+                    </h1>
+
+                </div>
             </div>
-            <h4>Trening va amaliy mashg‘ulotlar</h4>
-            <hr>
-            <p>Tezkor o‘rganish va bilimlarni amaliyotda qo‘llash imkoniyati.</p>
         </div>
-        <div class="section_2-mini">
-            <div class="red-shape">
-                <img src="{% static 'img/book.svg' %}" alt="book" width="32" height="32">
-            </div>
-            <h4>Mutaxassislar tomonidan yo‘riqnoma</h4>
-            <hr>
-            <p>Tajriba va natijaga yo‘naltirilgan o‘qitish usullari bilan orzularingizga yaqinlashing!</p>
-        </div>
-    </div>
+
+    </main>
 </section>
 <section id="section_3">
     <div class="section_3-main container">
@@ -286,5 +321,59 @@
     </div>
 </section>
 
+<script>
+    
+let son = document.querySelector(".jsp");
+let son1 = document.querySelector(".jsp1");
+let son3 = document.querySelector(".jsp2");
 
+
+let start = 1000;
+let end = 6453;
+
+let duration = 10; 
+let stepTime = Math.floor(duration / end);
+
+
+let counter = setInterval(function () {
+  start++;
+  son.textContent = "+" + start;
+
+  if (start == end) {
+    clearInterval(counter); 
+  }
+}, stepTime );
+
+let start1 = 0;
+let end1 = 245;
+
+let duration1 = 5000; 
+let stepTime1 = Math.floor(duration1 / end1);
+
+
+let counter1 = setInterval(function () {
+  start1++;
+  son1.textContent = "+" +  start1;
+
+  if (start1 == end1) {
+    clearInterval(counter1); 
+  }
+}, stepTime1);
+
+let start3 = 0;
+let end3 = 5; 
+
+let duration3 = 5000; 
+let stepTime3 = Math.floor(duration3 / end3);
+
+
+let counter3 = setInterval(function () {
+  start3++;
+  son3.textContent = "+" +  start3+ "  " + "yil";
+
+  if (start3 == end3) {
+    clearInterval(counter3); 
+  }
+}, stepTime3);
+</script>
 {% endblock %}
