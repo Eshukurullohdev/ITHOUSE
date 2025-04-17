@@ -973,7 +973,7 @@ footer {
 }
 
 .number {
-    background-color: rgb(229, 27, 27);
+    background-color: #0066FF;
     height: 40px;
     width: 40px;
     display: flex;
@@ -1067,7 +1067,7 @@ footer {
 }
 
 .card-m p {
-    color: #fe0000;
+    color: #0066FF;
     font-size: 38px;
     padding-top: 12px;
     font-weight: bold;
