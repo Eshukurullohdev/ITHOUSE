@@ -78,7 +78,7 @@ nav {
 }
 
 .nav_left ul li a:hover {
-    color: #96BB7C;
+    color: #0066FF;
 }
 
 .nav_right {
@@ -344,7 +344,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #E74040;
+    background-color: #0066FF;
     border-radius: 3px;
 }
 
