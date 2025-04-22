@@ -222,7 +222,7 @@
         </div>
     </div>
 </section>
-<section id="section_6">
+<!-- <section id="section_6">
     <div class="section_6-main container">
         <div class="section_6-main-info">
             <h3 class="green-heading">Practice Advice</h3>
@@ -280,32 +280,23 @@
             </div>
         </div>
     </div>
-</section>
-<section id="section_7">
-    <div class="section_7-main container">
-        <div class="section_6-main-info">
-            <h3 class="green-heading">Team</h3>
-            <h2 class="main-heading">Our Experts Teacher</h2>
-            <hr class="line">
-            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
-        </div>
-        <div class="team_mates">
-            {% for oqituvchilar in oqituvchilar %}
-            <div class="member">
-                <div class="member-avatar">
-                    <img src="{{ oqituvchilar.image.url }}" alt="team_mates" width="150" height="150">
-                </div>
-                <h3 class="green-heading">{{ oqituvchilar.fullname }}</h3>
-                <p>{{ oqituvchilar.job }}</p>
-                <a href="#"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+</section> -->
 
+<div class="container">
+    <div class="wrap">
+        {% for oqituvchilar in oqituvchilar %}
+      <div class="card">
+        <img src="{{ oqituvchilar.image.url }}" alt="Learn image" width="150px" height="150px" border-radius="50%">
+        <div class="info">
+          <h2>{{  oqituvchilar.fullname}}</h2>
+          <p>{{  oqituvchilar.job}}</p>
+          <p></p>
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+  </div>
 <section id="section_8">
     <div class="section_6-main-info">
         <h3 class="green-heading">Newsletter</h3>
