@@ -1277,7 +1277,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
+    padding-top: 100px;
     max-width: 1100px;
     margin: 0 auto;
   }
