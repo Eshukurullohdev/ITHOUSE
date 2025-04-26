@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    width: 1140px;
+    width: 1240px;
     margin: 0 auto;
 }
 
@@ -954,320 +954,6 @@ footer {
 }
 
 
-/* Khumoyun */
-.wrapper h1 {
-    text-align: center;
-    font-size: 34px;
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
-
-.card {
-    background: #fff;
-    border-radius: 20px;
-    width: 350px;
-    height: 480px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    margin-left: 20px;
-}
-
-.number {
-    background-color: rgb(229, 27, 27);
-    height: 40px;
-    width: 40px;
-    display: flex;
-    border-radius: 50%;
-    color: #fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 15px;
-}
-
-.number h1 {
-    margin: auto;
-    font-size: 16px;
-}
-
-.card h2 {
-    margin-top: 25px;
-    margin-bottom: 20px;
-    text-align: left;
-    margin-left: 30px;
-}
-
-.card img {
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    transition: 1s ease all;
-}
-
-.card img:hover {
-    transition: 1s ease all;
-    transform: scale(1.1);
-}
-
-.card h2 {
-    padding-right: 40px;
-    padding-top: 10px;
-    width: 282px;
-}
-
-.card_flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
-
-.img1 {
-    rotate: 20deg;
-    margin-top: 20px;
-}
-
-.img2 {
-    position: relative;
-    top: -20px;
-}
-
-.img3 {
-    rotate: 20deg;
-}
-
-.card-mein {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 180px;
-}
-
-.card-m {
-    background: #fff;
-    border-radius: 20px;
-    width: 320px;
-    height: 155px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    margin-left: 20px;
-    background: #f1f1f1;
-    margin-bottom: 100px;
-}
-
-.card-m h1 {
-    text-align: center;
-    font-size: 16px;
-
-    font-weight: 500;
-}
-
-.card-m p {
-    color: #fe0000;
-    font-size: 38px;
-    padding-top: 12px;
-    font-weight: bold;
-}
-
-
-
-@media (min-width: 150px) and (max-width: 500px) {
-    .card-wrapper {
-        flex-direction: column;
-        gap: 70px;
-    }
-
-    .card {
-        width: 90%;
-        height: auto;
-
-        margin: 0;
-    }
-
-    .card-mein {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .card-m {
-        width: 85%;
-        margin: 0;
-    }
-
-    .card img {
-        width: 295px;
-        object-fit: contain;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 1024px) {
-    .card-wrapper {
-        flex-direction: column;
-        gap: 70px;
-    }
-
-    .card {
-        width: 90%;
-        height: auto;
-
-        margin: 0;
-    }
-
-    .card-mein {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .card-m {
-        width: 85%;
-        margin: 0;  
-    }
-
-}
-
-@media (min-width: 320px) {
-    .number {
-        height: 28px;
-        width: 39px;
-    }
-
-    .h2 {
-        width: 320px;
-    }
-
-    .img1 {
-        width: 220px;
-        object-fit: scale-down;
-
-    }
-
-    .card {
-        height: 450px;
-        padding-bottom: 30px;
-
-    }
-
-    .card img {
-        rotate: 0deg;
-    }
-
-    .img2 {
-        position: relative;
-        top: -80px;
-        width: 350px;
-        height: 50px;
-    }
-
-    .card3 img {
-        rotate: 15deg;
-        width: 240px;
-    }
-
-    .card2 img {
-        margin-top: 50px;
-    }
-
-    .card2 h2 {
-        font-size: 19px;
-    }
-
-    .card1 img {
-        width: 270px;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 393px) {
-    .card3 img {
-        rotate: 15deg;
-        width: 250px;
-    }
-
-    .number {
-        height: 35px;
-        width: 40px;
-    }
-}
-
-@media (min-width: 412px) {
-    .card3 img {
-        rotate: 15deg;
-        width: 250px;
-    }
-
-    .number {
-        height: 35px;
-        width: 40px;
-    }
-}
-
-
-@media (min-width: 390px) {
-    .card1 img {
-        rotate: 20deg;
-
-    }
-}
-
-@media (min-width: 428px) {
-    .card1 img {
-        rotate: 20deg;
-        width: 290px;
-    }
-}
-
-
-@media (min-width: 1114px) {
-    .card img {
-        object-fit: contain;
-    }
-
-    .card {
-        margin: 0;
-    }
-}
-
-@media (max-width: 197px) {
-    .card img {
-        rotate: 0deg;
-        height: 100px;
-        width: 80%;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-        padding-top: 15px;
-    }
-
-    .card_flex {
-        margin: 0;
-        padding: 0;
-
-    }
-
-    .card img {
-        right: 0deg;
-    }
-
-    .card h2 {
-        margin: 0;
-        padding: 0;
-        font-size: 12px;
-        margin-left: 15px;
-    }
-
-    .number {
-        height: 25px;
-        width: 75px;
-        margin-left: 20px;
-    }
-
-}
 
 /* Khumoyun 2 */
 
@@ -1300,8 +986,8 @@ footer {
   }
   
   .card img {
-    width: 120px;
-    height: 120px;
+    width: 84px;
+    height: 84px;
     object-fit: cover;
     border-radius: 50%;
     margin-right: 20px;
@@ -1354,3 +1040,157 @@ footer {
     }
   }
   
+
+/* Nurjahon Sister */
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 30px;
+            justify-items: center;
+            align-content: center;
+        }
+        
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 540px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .title {
+                font-size: 1.2rem;
+            }
+            .card {
+                width: 90vw;
+                height: 180px;
+                padding: 24px 8px 16px 8px;
+            }
+        }
+
+        a.cardN {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            border-radius: 14px;
+            transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+            outline: none;
+        }
+
+        a.cardN:focus {
+            box-shadow: 0 0 0 3px #6c63ff55;
+            background: #f3f0ff;
+        }
+
+        .cardN {
+            background: #f9fafb;
+            border: 1px solid #eee;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            text-align: center;
+            padding: 36px 18px 24px 18px;
+            cursor: pointer;
+            width: 80%;         /* Fixed width for all cards */
+            height: 190px;        /* Fixed height for all cards */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cardN:hover {
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+            transform: translateY(-4px) scale(1.03);
+            background: #f8f8ff;
+        }
+
+        .cardN i {
+            font-size: 2.5rem;
+            margin-bottom: 18px;
+            color: #6c63ff;
+        }
+
+        .cardN .topic {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #222;
+        }
+
+        .cardN .courses {
+            font-size: 0.95rem;
+            color: #888;
+        }
+
+        /* Custom icon colors for variety */
+        .cardN.computer i {
+            color: #4e73df;
+        }
+
+        /* Blue for Computer Literacy */
+        .cardN.frontend i {
+            color: #1cc88a;
+        }
+
+        /* Green for Frontend */
+        .cardN.backend i {
+            color: #f6c23e;
+        }
+
+        /* Yellow for Backend */
+        .cardN.english i {
+            color: #e74a3b;
+        }
+
+        /* Red for English */
+        .cardN.russian i {
+            color: #36b9cc;
+        }
+
+        /* Teal for Russian */
+        @media (max-width: 540px) {
+            .title {
+                font-size: 1.2rem;
+            }
+
+            .card {
+                width: 90vw;
+                height: 180px;
+                padding: 24px 8px 16px 8px;
+            }
+        }
+
+        .card-img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+            background: #f3f3f3;
+        }
+
+        .row-center {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 0;
+        }
+
+        @media (max-width: 900px) {
+            .row-center {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+        }
