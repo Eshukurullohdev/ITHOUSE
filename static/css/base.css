@@ -1041,6 +1041,69 @@ footer {
   }
   
 
+
+/* Humoyun */
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.faq h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.faq-icon {
+    font-size: 20px;
+    color: #6C63FF;
+    background-color: #ffffff; 
+    border: 1.5px solid grey;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.faq-content {
+    flex: 1;
+}
+.faq-content h2 {
+    font-size: 22px;
+    color: #6C63FF;
+    margin-bottom: 10px;
+}
+.faq-content p {
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+}
+@media (max-width: 600px) {
+    .faq h1 {
+        font-size: 26px;
+    }
+    .faq-content h2 {
+        font-size: 20px;
+    }
+    .faq-content p {
+        font-size: 16px;
+    }
+    .faq-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+}
+
 /* Nurjahon Sister's code */
         .title {
             text-align: center;
