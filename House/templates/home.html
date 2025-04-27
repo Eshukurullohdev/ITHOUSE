@@ -216,33 +216,16 @@
 
 <div class="container">
     <div class="wrap">
+    {% for oqituvchilar in oqituvchilar %}
       <div class="card">
-        <img src="img/indexhtml2 photo1.webp" alt="Learn image">
+        <img src="{{ oqituvchilar.image.url}}" alt="Learn image">
         <div class="info">
           <h2>Azizbek aka</h2>
           <p>10 yillik tajribaga ega ingliz tili  o'qituvchisi</p>
         </div>
       </div>
-
-      <div class="card">
-        <img src="img/indexhtml2 photo3.jpeg" alt="Keyboard image">
-        <div class="info">
-          <h2>Shaxnoza opa</h2>
-          <p>Rus tili fanidan yuqori malakali ustoz</p>
-        </div>
-      </div>
+      {% endfor %}
   
-      <div class="card">
-        <img src="img/indexhtml2 photo2.jpg" alt="Students image">
-        <div class="info">
-          <h2>Jamshid aka</h2>
-          <p>IT va dasturlash sohasida  professional mentor</p>
-        </div>
-      </div>
-
-      <div class=" card2">
-        
-      </div>
     </div>
   </div>
 <section id="section_8">

@@ -981,17 +981,17 @@ footer {
     transition: 0.3s ease;
   }
   
-  .card:hover {
+.card:hover {
     transform: scale(1.02);
-  }
+}
   
-  .card img {
+.card img {
     width: 84px;
     height: 84px;
     object-fit: cover;
     border-radius: 50%;
     margin-right: 20px;
-  }
+}
   
   .info h2 {
     margin: 0;
@@ -1056,7 +1056,7 @@ footer {
 }
 .faq-item {
     border-bottom: 1px solid #ddd;
-    padding: 20px 0;
+    padding: 50px 0;
     display: flex;
     align-items: center;
 }
@@ -1257,3 +1257,54 @@ footer {
                 gap: 30px;
             }
         }
+
+
+
+
+  .container h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 ta ustun */
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #eef4ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 16px;
+    color: #555;
+  }
+
+
+  @media (max-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr; 
+    }
+    .card {
+      height: auto; 
+    }
+  }
