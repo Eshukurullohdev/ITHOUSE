@@ -1016,10 +1016,11 @@ footer {
     }
   
     .card img {
+    
       margin-right: 0;
       margin-bottom: 15px;
-      width: 100%;
-      height: auto;
+      width: 62px;
+      height: 62px;
     }
   }
   
@@ -1033,8 +1034,8 @@ footer {
     }
   
     .card img {
-      width: 140px;
-      height: 100px;
+      width: 62px;
+      height: 62px;
       margin-right: 15px;
       margin-bottom: 0;
     }
@@ -1047,6 +1048,7 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 90px;
 }
 .faq h1 {
     font-size: 32px;
@@ -1106,10 +1108,10 @@ footer {
 
 /* Nurjahon Sister's code */
         .title {
-            text-align: center;
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 40px;
+            margin-left: 40px;
         }
 
         .grid {
@@ -1298,7 +1300,10 @@ footer {
     font-size: 16px;
     color: #555;
   }
-
+.coin {
+    width: 62px;
+    height: 62px;
+}
 
   @media (max-width: 768px) {
     .cards {
