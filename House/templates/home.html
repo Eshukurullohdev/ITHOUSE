@@ -77,17 +77,42 @@
     </div>
 </div>
 
-<section id="section_4">
-    <div class="section_4-main container">
-        <div class="section_4-left">
-            <h2 class="main-heading">Every Client Matters</h2>
-            <hr class="line">
-            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: <br> Newtonian mechanics </p>
-            <a href="#">Learn More <i class="fa-solid fa-chevron-right"></i></a>
-        </div>
-        <img src="{% static 'img/section-4.png' %}" alt="boy" width="513" height="424">
-    </div>
-</section>
+
+<div class="carousel-wrapper container">
+    <h1>IT House Hayoti</h1>
+
+   
+
+        <div class="carousel">
+   
+            <div class="cardV">
+              <video src="static/img/video1.mp4" poster="/static/img/PHOTO1.png" preload="none" controls></video>
+              <button class="play-button">&#9658;</button>
+              <div class="name-tag">Ismoil Olimov</div>
+            </div>
+   
+            <div class="cardV">
+              <video src="/static/img/video2.mp4" poster="/static/img/PHOTO2.png" preload="none"></video>
+              <button class="play-button">&#9658;</button>
+              <div class="name-tag">Mohloroy</div>
+            </div>
+          
+     
+            <div class="cardV card3">
+              <video controls >
+                <source src="/static/img/video3.mp4" type="video/mp4">
+                Brauzeringiz video tegini qo‘llab-quvvatlamaydi.
+              </video>
+              
+              <button class="play-button">&#9658;</button>
+              <div class="name-tag">Nuriddin</div>
+            </div>
+
+            
+          </div>
+          
+    
+  </div>
 
 <section id="section_5">
     <div class="section_5-main container">
@@ -274,5 +299,58 @@ let counter3 = setInterval(function () {
     clearInterval(counter3); 
   }
 }, stepTime3);
+
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach((card, index) => {
+  const video = card.querySelector('video');
+  const button = card.querySelector('.play-button');
+
+  // Play tugmasi bosilganda
+  button.addEventListener('click', () => {
+    stopAllVideosExcept(index);
+    video.play();
+    video.controls = true;
+    button.style.display = 'none';
+  });
+
+  // Video bosilganda toggle (pause/play)
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      stopAllVideosExcept(index);
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+
+  // ✅ Video pause bo‘lsa — tugmani qaytarish
+  video.addEventListener('pause', () => {
+    button.style.display = 'flex';
+  });
+
+  // ✅ Video tugasa — bosh tugmani qaytarish
+  video.addEventListener('ended', () => {
+    button.style.display = 'flex';
+    video.controls = false;
+    video.currentTime = 0;
+  });
+});
+
+function stopAllVideosExcept(currentIndex) {
+  const allVideos = document.querySelectorAll('video');
+  const allButtons = document.querySelectorAll('.play-button');
+
+  allVideos.forEach((v, i) => {
+    if (i !== currentIndex) {
+      v.pause();
+      v.currentTime = 0;
+      v.controls = false;
+      allButtons[i].style.display = 'flex';
+    }
+  });
+}
+
 </script>
 {% endblock %}

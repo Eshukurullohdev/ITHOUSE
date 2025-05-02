@@ -1313,3 +1313,174 @@ footer {
       height: auto; 
     }
   }
+
+
+/* Humoyun code end */
+
+
+
+.carousel-wrapper {
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .cardV {
+    position: relative;
+    width: 270px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 2;
+  }
+  
+  .play-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .name-tag {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .arrow-buttons {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .arrow-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .cardV {
+    width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+  }
+  
+  
+  .cardV video,
+  .cardV img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+  }
+  
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.85);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+  }
+  
+  
+  .name-tag {
+    position: absolute;
+    bottom: 15px;
+    left: 75px;
+    transform: translateX(-50%);
+    background: white;
+    padding: 6px 18px;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+  }
+  
+  
+  video::-webkit-media-controls {
+    display: none;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+  }
