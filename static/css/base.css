@@ -588,19 +588,23 @@ form button {
 
 footer {
     padding-top: 90px;
+    background-color: #0066FF;
+    color: #fff;
 }
 
 .footer-main {
     display: flex;
     justify-content: space-between;
+    color: #fff;
 }
 
 .footer-main-mini {
     width: 270px;
+    color: #fff;
 }
 
 .footer-main-mini h3 {
-    color: #000;
+    color: #fff;
     font-weight: 600;
 }
 
@@ -619,7 +623,7 @@ footer {
 }
 
 .footer-main-mini a {
-    color: #737373;
+    color: #fff;
     font-weight: 600;
 }
 
@@ -1266,6 +1270,7 @@ footer {
   .container h1 {
     font-size: 32px;
     margin-bottom: 40px;
+    color: #0066FF;
   }
 
   .cards {
@@ -1318,7 +1323,6 @@ footer {
 /* Humoyun code end */
 
 
-
 .carousel-wrapper {
     position: relative;
   }
@@ -1338,6 +1342,12 @@ footer {
     overflow: hidden;
     background-color: #000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .cardV:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    border: 3px solid #0066FF;
   }
   
   video {
@@ -1483,4 +1493,12 @@ footer {
     font-size: 30px;
     cursor: pointer;
     z-index: 2;
+  }
+
+  .Lavha {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0066FF;
+    margin-bottom: 30px;
+    text-align: center;
   }

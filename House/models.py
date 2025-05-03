@@ -37,3 +37,9 @@ class Teacher(models.Model):
         verbose_name = "O‘qituvchi"
         verbose_name_plural = "O‘qituvchilar"
         ordering = ["fullname"]
+        
+class VideoUpload(models.Model):
+    title = models.CharField(max_length=255)  # Videoga nom
+    video_file = models.FileField(upload_to='videos/')  # Video fayl yuklanadi
+    uploaded_at = models.DateTimeField(auto_now_add=True) 
+    

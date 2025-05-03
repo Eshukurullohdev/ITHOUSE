@@ -78,15 +78,15 @@
 </div>
 
 
-<div class="carousel-wrapper container">
-    <h1>IT House Hayoti</h1>
+<div class="carousel-wrapper ">
+    <h1 class="Lavha">IT House Lavhalari</h1>
 
    
 
         <div class="carousel">
    
             <div class="cardV">
-              <video src="static/img/video1.mp4" poster="/static/img/PHOTO1.png" preload="none" controls></video>
+              <video src="/static/img/video1.mp4"  poster="/static/img/PHOTO1.png" preload="none" ></video>
               <button class="play-button">&#9658;</button>
               <div class="name-tag">Ismoil Olimov</div>
             </div>
@@ -245,112 +245,58 @@
     </div>
 </section>
 
+
 <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll('.cardV');
     
-let son = document.querySelector(".jsp");
-let son1 = document.querySelector(".jsp1");
-let son3 = document.querySelector(".jsp2");
-
-
-let start = 1000;
-let end = 6453;
-
-let duration = 10; 
-let stepTime = Math.floor(duration / end);
-
-
-let counter = setInterval(function () {
-  start++;
-  son.textContent = "+" + start;
-
-  if (start == end) {
-    clearInterval(counter); 
-  }
-}, stepTime );
-
-let start1 = 0;
-let end1 = 245;
-
-let duration1 = 5000; 
-let stepTime1 = Math.floor(duration1 / end1);
-
-
-let counter1 = setInterval(function () {
-  start1++;
-  son1.textContent = "+" +  start1;
-
-  if (start1 == end1) {
-    clearInterval(counter1); 
-  }
-}, stepTime1);
-
-let start3 = 0;
-let end3 = 5; 
-
-let duration3 = 5000; 
-let stepTime3 = Math.floor(duration3 / end3);
-
-
-let counter3 = setInterval(function () {
-  start3++;
-  son3.textContent = "+" +  start3+ "  " + "yil";
-
-  if (start3 == end3) {
-    clearInterval(counter3); 
-  }
-}, stepTime3);
-
-
-const cards = document.querySelectorAll('.card');
-
-cards.forEach((card, index) => {
-  const video = card.querySelector('video');
-  const button = card.querySelector('.play-button');
-
-  // Play tugmasi bosilganda
-  button.addEventListener('click', () => {
-    stopAllVideosExcept(index);
-    video.play();
-    video.controls = true;
-    button.style.display = 'none';
-  });
-
-  // Video bosilganda toggle (pause/play)
-  video.addEventListener('click', () => {
-    if (video.paused) {
-      stopAllVideosExcept(index);
-      video.play();
-    } else {
-      video.pause();
-    }
-  });
-
-  // ✅ Video pause bo‘lsa — tugmani qaytarish
-  video.addEventListener('pause', () => {
-    button.style.display = 'flex';
-  });
-
-  // ✅ Video tugasa — bosh tugmani qaytarish
-  video.addEventListener('ended', () => {
-    button.style.display = 'flex';
-    video.controls = false;
-    video.currentTime = 0;
-  });
-});
-
-function stopAllVideosExcept(currentIndex) {
-  const allVideos = document.querySelectorAll('video');
-  const allButtons = document.querySelectorAll('.play-button');
-
-  allVideos.forEach((v, i) => {
-    if (i !== currentIndex) {
-      v.pause();
-      v.currentTime = 0;
-      v.controls = false;
-      allButtons[i].style.display = 'flex';
-    }
-  });
-}
-
-</script>
+      cards.forEach((card, index) => {
+        const video = card.querySelector('video');
+        const button = card.querySelector('.play-button');
+        
+        if (!video || !button) return;
+    
+        button.addEventListener('click', () => {
+          stopAllVideosExcept(index);
+          video.play();
+          video.controls = true;
+          button.style.display = 'none';
+        });
+    
+        video.addEventListener('click', () => {
+          if (video.paused) {
+            stopAllVideosExcept(index);
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+    
+        video.addEventListener('pause', () => {
+          button.style.display = 'flex';
+        });
+    
+        video.addEventListener('ended', () => {
+          button.style.display = 'flex';
+          video.controls = false;
+          video.currentTime = 0;
+        });
+      });
+    
+      function stopAllVideosExcept(currentIndex) {
+        const allVideos = document.querySelectorAll('video');
+        const allButtons = document.querySelectorAll('.play-button');
+    
+        allVideos.forEach((v, i) => {
+          if (i !== currentIndex) {
+            v.pause();
+            v.currentTime = 0;
+            v.controls = false;
+            allButtons[i].style.display = 'flex';
+          }
+        });
+      }
+    });
+    </script>
+    
 {% endblock %}
