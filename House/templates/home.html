@@ -84,29 +84,17 @@
    
 
         <div class="carousel">
-   
+          {% for video in videos %}
             <div class="cardV">
-              <video src="/static/img/video1.mp4"  poster="/static/img/PHOTO1.png" preload="none" ></video>
+              <video src="{{ video.video_file.url }}" preload="none" {% if video.poster_video %}poster="{{ video.poster_video.url }}"{% endif %}></video>
               <button class="play-button">&#9658;</button>
-              <div class="name-tag">Ismoil Olimov</div>
+              <div class="name-tag">{{ video.title }}</div>
             </div>
-   
-            <div class="cardV">
-              <video src="/static/img/video2.mp4" poster="/static/img/PHOTO2.png" preload="none"></video>
-              <button class="play-button">&#9658;</button>
-              <div class="name-tag">Mohloroy</div>
-            </div>
+          {% endfor %}
+        
           
      
-            <div class="cardV card3">
-              <video controls >
-                <source src="/static/img/video3.mp4" type="video/mp4">
-                Brauzeringiz video tegini qo‘llab-quvvatlamaydi.
-              </video>
-              
-              <button class="play-button">&#9658;</button>
-              <div class="name-tag">Nuriddin</div>
-            </div>
+        
 
             
           </div>

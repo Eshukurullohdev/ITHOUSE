@@ -41,5 +41,6 @@ class Teacher(models.Model):
 class VideoUpload(models.Model):
     title = models.CharField(max_length=255)  # Videoga nom
     video_file = models.FileField(upload_to='videos/')  # Video fayl yuklanadi
+    poster_video = models.ImageField(upload_to='posters/', blank=True, null=True)  # Video uchun poster
     uploaded_at = models.DateTimeField(auto_now_add=True) 
     
