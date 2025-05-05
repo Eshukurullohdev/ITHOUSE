@@ -960,7 +960,9 @@ footer {
 
 
 /* Khumoyun 2 */
-
+    .Oqish {
+        color: #0066FF;
+    }
     .cardsH {
         display: flex;
         flex-wrap: wrap;
@@ -1067,6 +1069,7 @@ footer {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #0066FF;
     text-align: center;
 }
 .faq-item {
