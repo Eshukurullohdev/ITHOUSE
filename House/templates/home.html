@@ -80,17 +80,16 @@
 <section class="team-section-t">
         
     <div class="carousel-wrapper-t">
-        <h2>Bizning Jamoa</h2>
+        <h2 class="teacherh2">Bizning Jamoa</h2>
       <div class="carousel-track-t" id="carouselTrack-t">
+        {%  for oqituvchilar in oqituvchilar %}
+        <div class="card-t"><img src="{{ oqituvchilar.image.url }}" alt="">
+            <h3>{{ oqituvchilar.fullname }}</h3>
+            <p>{{ oqituvchilar.job }}</p>
+        </div>
+        {% endfor %}
        
-        <div class="card-t"><img src="PHOTO1.png"><h3>Ism 1</h3><p>Yo‘nalish</p></div>
-        <div class="card-t"><img src="PHOTO2.png"><h3>Ism 2</h3><p>Yo‘nalish</p></div>
-        <div class="card-t"><img src="PHOTO3.png"><h3>Ism 3</h3><p>Yo‘nalish</p></div>
-        <div class="card-t"><img src="PHOTO2.png"><h3>Ism 4</h3><p>Yo‘nalish</p></div>
-        <div class="card-t"><img src="PHOTO3.png"><h3>Ism 5</h3><p>Yo‘nalish</p></div>
-        <div class="card-t"><img src="PHOTO1.png"><h3>Ism 6</h3><p>Yo‘nalish</p></div>
-       
-        <div class="card-t"><img src="8_Zreloe-Tvorchestvo-1830-e-gody.png"><h3>Ism 1</h3><p>Yo‘nalish</p></div>
+        
       </div>
     </div>
   </section>

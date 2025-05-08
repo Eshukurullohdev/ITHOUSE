@@ -1635,7 +1635,7 @@ a.cardN:focus {
     text-align: center;
   }
   
-  h2 {
+  .teacherh2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: left;
