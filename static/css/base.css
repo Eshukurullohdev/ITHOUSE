@@ -1513,7 +1513,7 @@ a.cardN:focus {
     border-radius: 20px;
     font-weight: bold;
     font-size: 14px;
-    color: #000;
+    color: #0066FF !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
@@ -1639,6 +1639,7 @@ a.cardN:focus {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: left;
+    color: #0066FF;
   }
   
   .carousel-wrapper-t {
@@ -1676,9 +1677,76 @@ a.cardN:focus {
   .card-t h3 {
     font-size: 18px;
     margin: 10px 0 5px;
+    color: #0066FF;
   }
   
   .card-t p {
     color: gray;
   }
   
+/* Menu code is ??? */
+
+    /* ☰ tugma */
+    .menu-toggle {
+        font-size: 32px;
+        padding: 12px 20px;
+        cursor: pointer;
+        display: none;
+        color: #fff;
+        background: #0066FF;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 101;
+      }
+  
+      /* Mobil menyu */
+      .mobile-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(145deg, #3a7bd5, #00d2ff);
+        color: white;
+        padding: 40px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: top 0.4s ease;
+        z-index: 100;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      }
+  
+      .mobile-menu.active {
+        top: 0;
+      }
+  
+      .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 15px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 8px;
+        transition: background 0.3s;
+      }
+  
+      .mobile-menu a:hover {
+        background: rgba(255,255,255,0.3);
+      }
+  
+      .close-btn {
+        font-size: 24px;
+        text-align: right;
+        cursor: pointer;
+      }
+  
+      /* Faqat telefonlarda ko‘rinadi */
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+      }

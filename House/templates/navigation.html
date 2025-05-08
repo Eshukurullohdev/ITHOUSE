@@ -16,8 +16,25 @@
             <!-- <a class="login" href="#">Login</a> -->
             <a class="join" href="https://ithouse.edutizim.uz/order/entry/?survey=s33">Ro'yhatan O'ting<i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <a id="menu_bar" href="#">
-            <i class="fa-solid fa-bars-staggered"></i>
-        </a>
+       
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <!-- Tepadagi menyu -->
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="close-btn" onclick="toggleMenu()">✖</div>
+          <a href="#">🏠 Bosh sahifa</a>
+          <a href="#">📖 Maqolalar</a>
+          <a href="#">📦 Xizmatlar</a>
+          <a href="#">📞 Aloqa</a>
+        </div>
+      
+        <!-- Asosiy kontent -->
+       
     </nav>
 </header>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("active");
+      }
+  </script>
