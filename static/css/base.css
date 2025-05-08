@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     color: #737373;
@@ -42,8 +46,19 @@ a {
 header {
     background-color: #F4F4F3;
     font-size: 19px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.4s ease;
+    background: white;
+    /* yoki kerakli fon */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
+header.hide {
+    transform: translateY(-100%);
+  }
 nav {
     display: flex;
     align-items: center;
@@ -73,7 +88,7 @@ nav {
 }
 
 .nav_left ul li a {
-    color: #737373;
+    color: #0066FF;
     font-weight: 600;
 }
 
@@ -960,21 +975,11 @@ footer {
 
 
 /* Khumoyun 2 */
-    .Oqish {
-        color: #0066FF;
-    }
-    .cardsH {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 100px;
-        padding-top: 100px;
-        max-width: 1100px;
-        margin: 0 auto;
+.Oqish {
+    color: #0066FF;
+}
 
-    }
-  
-  .wrap {
+.cardsH {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -982,9 +987,20 @@ footer {
     padding-top: 100px;
     max-width: 1100px;
     margin: 0 auto;
-  }
-  
-  .cardH {
+
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cardH {
     display: flex;
     align-items: center;
     background: #fff;
@@ -994,12 +1010,12 @@ footer {
     height: 150px;
     width: 500px;
     transition: 0.3s ease;
-  }
-  
+}
+
 .cardH:hover {
     transform: scale(1.02);
 }
-  
+
 .cardH img {
     width: 84px;
     height: 84px;
@@ -1007,55 +1023,55 @@ footer {
     border-radius: 50%;
     margin-right: 20px;
 }
-  
-  .info h2 {
+
+.info h2 {
     margin: 0;
     font-size: 22px;
     color: #111;
-  }
-  
-  .info p {
+}
+
+.info p {
     margin: 10px 0 0;
     color: #666;
     font-size: 16px;
     padding-bottom: 10px;
-  }
-  
-  /* Responsive: portret (kichik ekranlar) */
-  @media screen and (max-width: 700px) {
+}
+
+/* Responsive: portret (kichik ekranlar) */
+@media screen and (max-width: 700px) {
     .cardH {
-      flex-direction: column;
-      height: auto;
-      width: 90%;
-      text-align: center;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        text-align: center;
     }
-  
+
     .cardH img {
-    
-      margin-right: 0;
-      margin-bottom: 15px;
-      width: 62px;
-      height: 62px;
+
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 62px;
+        height: 62px;
     }
-  }
-  
-  /* Responsive: landscape (kichik ekranlar, lekin ekran kengroq) */
-  @media screen and (max-height: 500px) and (orientation: landscape) {
+}
+
+/* Responsive: landscape (kichik ekranlar, lekin ekran kengroq) */
+@media screen and (max-height: 500px) and (orientation: landscape) {
     .cardH {
-      flex-direction: row;
-      height: auto;
-      width: 90%;
-      text-align: left;
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+        text-align: left;
     }
-  
+
     .cardH img {
-      width: 62px;
-      height: 62px;
-      margin-right: 15px;
-      margin-bottom: 0;
+        width: 62px;
+        height: 62px;
+        margin-right: 15px;
+        margin-bottom: 0;
     }
-  }
-  
+}
+
 
 
 /* Humoyun */
@@ -1065,6 +1081,7 @@ footer {
     padding: 20px;
     margin-top: 90px;
 }
+
 .faq h1 {
     font-size: 32px;
     font-weight: bold;
@@ -1072,16 +1089,18 @@ footer {
     color: #0066FF;
     text-align: center;
 }
+
 .faq-item {
     border-bottom: 1px solid #ddd;
     padding: 50px 0;
     display: flex;
     align-items: center;
 }
+
 .faq-icon {
     font-size: 20px;
     color: #6C63FF;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     border: 1.5px solid grey;
     width: 40px;
     height: 40px;
@@ -1092,29 +1111,36 @@ footer {
     margin-right: 15px;
     flex-shrink: 0;
 }
+
 .faq-content {
     flex: 1;
 }
+
 .faq-content h2 {
     font-size: 22px;
     color: #6C63FF;
     margin-bottom: 10px;
 }
+
 .faq-content p {
     font-size: 18px;
     color: #666;
     margin: 0;
 }
+
 @media (max-width: 600px) {
     .faq h1 {
         font-size: 26px;
     }
+
     .faq-content h2 {
         font-size: 20px;
     }
+
     .faq-content p {
         font-size: 16px;
     }
+
     .faq-icon {
         width: 34px;
         height: 34px;
@@ -1135,7 +1161,7 @@ footer {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     justify-items: center;
     align-content: center;
@@ -1151,9 +1177,11 @@ footer {
     .grid {
         grid-template-columns: 1fr;
     }
+
     .title {
         font-size: 1.2rem;
     }
+
     .cardN {
         width: 90vw;
         height: 180px;
@@ -1249,7 +1277,7 @@ a.cardN:focus {
 
 .cardN .courses {
     font-size: 0.95rem;
-    color: #666;
+    color: #0066FF;
     font-weight: 500;
     margin-bottom: 4px;
 }
@@ -1442,23 +1470,23 @@ a.cardN:focus {
     font-size: 1rem;
     margin-bottom: 0;
 }
-    
+
 
 /* Humoyun code end */
 
 
 .carousel-wrapper {
     position: relative;
-  }
-  
-  .carousel {
+}
+
+.carousel {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-  }
-  
-  .cardV {
+}
+
+.cardV {
     position: relative;
     width: 270px;
     height: 480px;
@@ -1467,21 +1495,22 @@ a.cardN:focus {
     background-color: #000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .cardV:hover {
+}
+
+.cardV:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     border: 3px solid #0066FF;
-  }
-  
-  video {
+}
+
+video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-  }
-  
-  .play-button {
+}
+
+.play-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1498,13 +1527,13 @@ a.cardN:focus {
     cursor: pointer;
     transition: 0.2s;
     z-index: 2;
-  }
-  
-  .play-button:hover {
+}
+
+.play-button:hover {
     background-color: rgba(255, 255, 255, 1);
-  }
-  
-  .name-tag {
+}
+
+.name-tag {
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -1516,17 +1545,17 @@ a.cardN:focus {
     color: #0066FF !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     z-index: 1;
-  }
-  
-  .arrow-buttons {
+}
+
+.arrow-buttons {
     position: absolute;
     top: -10px;
     right: 10px;
     display: flex;
     gap: 10px;
-  }
-  
-  .arrow-btn {
+}
+
+.arrow-btn {
     width: 40px;
     height: 40px;
     background-color: #f1f1f1;
@@ -1538,34 +1567,34 @@ a.cardN:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .carousel {
+}
+
+.carousel {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 20px;
-  }
-  
-  .cardV {
+}
+
+.cardV {
     width: 270px;
     border-radius: 20px;
     overflow: hidden;
     background-color: #000;
     position: relative;
-  }
-  
-  
-  .cardV video,
-  .cardV img {
+}
+
+
+.cardV video,
+.cardV img {
     width: 100%;
     border-radius: 20px;
     display: block;
-  }
-  
-  
-  .play-button {
+}
+
+
+.play-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1580,10 +1609,10 @@ a.cardN:focus {
     justify-content: center;
     cursor: pointer;
     border: none;
-  }
-  
-  
-  .name-tag {
+}
+
+
+.name-tag {
     position: absolute;
     bottom: 15px;
     left: 75px;
@@ -1594,14 +1623,14 @@ a.cardN:focus {
     font-weight: bold;
     font-size: 14px;
     color: black;
-  }
-  
-  
-  video::-webkit-media-controls {
+}
+
+
+video::-webkit-media-controls {
     display: none;
-  }
-  
-  .play-button {
+}
+
+.play-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1617,15 +1646,15 @@ a.cardN:focus {
     font-size: 30px;
     cursor: pointer;
     z-index: 2;
-  }
+}
 
-  .Lavha {
+.Lavha {
     font-size: 32px;
     font-weight: 800;
     color: #0066FF;
     margin-bottom: 30px;
     text-align: center;
-  }
+}
 
 
 /* Khumoyun code is teacher */
@@ -1633,120 +1662,155 @@ a.cardN:focus {
 .team-section-t {
     padding: 40px 0;
     text-align: center;
-  }
-  
-  .teacherh2 {
+}
+
+.teacherh2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: left;
     color: #0066FF;
-  }
-  
-  .carousel-wrapper-t {
+}
+
+.carousel-wrapper-t {
     max-width: 1040px;
     overflow: hidden;
     margin: auto;
     position: relative;
-  }
-  
-  .carousel-track-t {
+}
+
+.carousel-track-t {
     display: flex;
     transition: transform 0.6s ease-in-out;
-  }
-  
-  .card-t {
+}
+
+.card-t {
     width: 307px;
     height: 410px;
     background: white;
     border-radius: 20px;
     margin: 0 10px;
     flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 10px;
-  }
-  
-  .card-t img {
-      margin-top: 20px;
+}
+
+.card-t img {
+    margin-top: 20px;
     width: 260px;
     height: 250px;
     object-fit: cover;
     border-radius: 15px;
-  }
-  
-  .card-t h3 {
+}
+
+.card-t h3 {
     font-size: 18px;
     margin: 10px 0 5px;
     color: #0066FF;
-  }
-  
-  .card-t p {
+}
+
+.card-t p {
     color: gray;
-  }
-  
+}
+
 /* Menu code is ??? */
 
-    /* ☰ tugma */
+/* ☰ tugma */
+.menu-toggle {
+    font-size: 32px;
+    padding: 12px 20px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    background: #0066FF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 101;
+}
+
+/* Mobil menyu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+
+    background: white;
+    transition: right 0.4s ease;
+    z-index: 1001;
+    background: linear-gradient(145deg, #3a7bd5, #00d2ff);
+    color: white;
+    padding: 40px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: top 0.4s ease;
+    z-index: 100;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+  
+  .mobile-menu.open {
+    right: 0;
+  }
+.mobile-menu.active {
+    top: 0;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.mobile-menu a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.close-btn {
+    font-size: 24px;
+    text-align: right;
+    cursor: pointer;
+}
+
+/* Faqat telefonlarda ko‘rinadi */
+@media (max-width: 768px) {
     .menu-toggle {
-        font-size: 32px;
-        padding: 12px 20px;
-        cursor: pointer;
-        display: none;
-        color: #fff;
-        background: #0066FF;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 101;
-      }
+        display: block;
+    }
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #0066FF; /* gradient */
+    color: white;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
   
-      /* Mobil menyu */
-      .mobile-menu {
-        position: fixed;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        background: linear-gradient(145deg, #3a7bd5, #00d2ff);
-        color: white;
-        padding: 40px 20px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        transition: top 0.4s ease;
-        z-index: 100;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-      }
+  #scrollToTop:hover {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
   
-      .mobile-menu.active {
-        top: 0;
-      }
-  
-      .mobile-menu a {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        padding: 10px 15px;
-        background: rgba(255,255,255,0.1);
-        border-radius: 8px;
-        transition: background 0.3s;
-      }
-  
-      .mobile-menu a:hover {
-        background: rgba(255,255,255,0.3);
-      }
-  
-      .close-btn {
-        font-size: 24px;
-        text-align: right;
-        cursor: pointer;
-      }
-  
-      /* Faqat telefonlarda ko‘rinadi */
-      @media (max-width: 768px) {
-        .menu-toggle {
-          display: block;
-        }
-      }

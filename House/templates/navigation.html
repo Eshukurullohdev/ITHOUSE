@@ -1,40 +1,59 @@
-
-<header>
-    <nav class="container">
-        <div class="nav_left">
-            <a class="logo" href="#">IT House</a>
-            <ul>
-                <li><a href="#">Bosh sahifa</a></li>
-                <li><a href="#">Kurslar</a></li>
-                <li><a href="#">Mentorlar</a></li>
-                <li><a href="#">Aloqa</a></li>
-                <li><a href="Tel:+998331443626">+998331443626</a></li>
-
-            </ul>
-        </div>
-        <div class="nav_right">
-            <!-- <a class="login" href="#">Login</a> -->
-            <a class="join" href="https://ithouse.edutizim.uz/order/entry/?survey=s33">Ro'yhatan O'ting<i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-       
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-        <!-- Tepadagi menyu -->
-        <div class="mobile-menu" id="mobileMenu">
-          <div class="close-btn" onclick="toggleMenu()">✖</div>
-          <a href="#">🏠 Bosh sahifa</a>
-          <a href="#">📖 Maqolalar</a>
-          <a href="#">📦 Xizmatlar</a>
-          <a href="#">📞 Aloqa</a>
-        </div>
-      
-        <!-- Asosiy kontent -->
-       
-    </nav>
-</header>
+<div id="navigation" class="navigation">
+    <header >
+        <nav class="container">
+            <div class="nav_left">
+                <a class="logo" href="#">IT House</a>
+                <ul>
+                    <li><a href="#intro">Bosh sahifa</a></li>
+                    <li><a href="#kurslar">Kurslar</a></li>
+                    <li><a href="#team">Mentorlar</a></li>
+                    <li><a href="#navigation">Aloqa</a></li>
+                    <li><a href="Tel:+998331443626">+998331443626</a></li>
+    
+                </ul>
+            </div>
+            <div class="nav_right">
+                <!-- <a class="login" href="#">Login</a> -->
+                <a class="join" href="https://ithouse.edutizim.uz/order/entry/?survey=s33">Ro'yhatan O'ting<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+           
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    
+            <!-- Tepadagi menyu -->
+            <div class="mobile-menu" id="mobileMenu">
+              <div class="close-btn" onclick="toggleMenu()">✖</div>
+              <a href="#intro">🏠 Bosh sahifa</a>
+              <a href="#kurslar" onclick="toggleMenu()"> 📚 Kurslar</a>
+              <a href="#team">  👥 Mentorlar</a>
+              <a href="#section_8">📞 Aloqa</a>
+            </div>
+          
+            <!-- Asosiy kontent -->
+           
+        </nav>
+    </header>
+</div>
 <script>
-    function toggleMenu() {
-        const menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("active");
+    let lastScrollY = window.scrollY;
+  const header = document.querySelector('header');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  window.addEventListener('scroll', () => {
+    const isMenuOpen = mobileMenu.classList.contains('open'); // ochilganmi?
+
+    if (!isMenuOpen) {
+      if (window.scrollY > lastScrollY && window.scrollY > 100) {
+        header.classList.add('hide');
+      } else {
+        header.classList.remove('hide');
       }
+    }
+
+    lastScrollY = window.scrollY;
+  });
+
+  // menyuni ochish-yopish funksiyasi
+  function toggleMenu() {
+    mobileMenu.classList.toggle('open');
+  }
   </script>
