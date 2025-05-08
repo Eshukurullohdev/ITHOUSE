@@ -1626,3 +1626,59 @@ a.cardN:focus {
     margin-bottom: 30px;
     text-align: center;
   }
+
+
+/* Khumoyun code is teacher */
+
+.team-section-t {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .carousel-wrapper-t {
+    max-width: 1040px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+  }
+  
+  .carousel-track-t {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .card-t {
+    width: 307px;
+    height: 410px;
+    background: white;
+    border-radius: 20px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .card-t img {
+      margin-top: 20px;
+    width: 260px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .card-t h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+  
+  .card-t p {
+    color: gray;
+  }
+  
