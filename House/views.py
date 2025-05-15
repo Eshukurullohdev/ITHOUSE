@@ -1,14 +1,26 @@
 from django.shortcuts import render
 from .models import *
-from django.shortcuts import render, get_object_or_404
+
 def home(request):
     oqituvchilar = Teacher.objects.all()
     videos = VideoUpload.objects.all()
     return render(request, 'home.html', {'oqituvchilar': oqituvchilar, 'videos': videos})
 
-def certificate_detail(request, id):
-    certificate = get_object_or_404(Certificate, id=id)
-    return render(request, 'certificate_detail.html', {'certificate': certificate})
+def find_certificate(request):
+    certificate = None
+    error = None
+
+    if request.method == 'POST':
+        id = request.POST.get('id')
+        if id and id.isdigit():
+            try:
+                certificate = Certificate.objects.get(id=id)
+            except Certificate.DoesNotExist:
+                error = f"ID {id} uchun sertifikat topilmadi."
+        else:
+            error = "Iltimos, to'g'ri ID kiriting."
+
+    return render(request, 'certificate.html', {'certificate': certificate, 'error': error})
 
 
 

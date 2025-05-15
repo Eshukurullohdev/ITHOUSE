@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sertifikatni topish</title>
+</head>
+<body>
+    <h1>Sertifikat ID orqali qidirish</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="id" placeholder="Sertifikat ID kiriting">
+        <button type="submit">Ko‘rsatish</button>
+    </form>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    {% if certificate %}
+        <h2>{{ certificate.student.get_full_name }} - {{ certificate.course }}</h2>
+        <p>Berilgan: {{ certificate.issued_date }}</p>
+        
+        {% if  ends_with_pdf  %}
+            <iframe src="{{ certificate.file.url }}" width="100%" height="600px" style="border: none;"></iframe>
+        {% else %}
+            <img src="{{ certificate.file.url }}" alt="Sertifikat" style="max-width:100%; height:auto;" />
+        {% endif %}
+    {% endif %}
+</body>
+</html>
