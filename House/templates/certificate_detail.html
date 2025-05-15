@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sertifikatlar Ro'yxati</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+        a.button {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sertifikatlar Ro'yxati</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Talaba</th>
+                <th>Kurs</th>
+                <th>Berilgan Sana</th>
+                <th>Ko'rish</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for certificate in certificates %}
+                {% if certificate.id %}
+                    <tr>
+                        <td>{{ certificate.id }}</td>
+                        <td>{{ certificate.student.get_full_name }}</td>
+                        <td>{{ certificate.course }}</td>
+                        <td>{{ certificate.issued_date }}</td>
+                        <td>
+                            <a href="{% url 'certificate_detail' id=certificate.id %}" class="button">
+                                Ko'rish
+                            </a>
+                        </td>
+                    </tr>
+                {% endif %}
+            {% empty %}
+                <tr>
+                    <td colspan="5">Sertifikatlar mavjud emas.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -46,6 +46,7 @@ class VideoUpload(models.Model):
     
 
 
+
 class Certificate(models.Model):
     student = models.ForeignKey(User, on_delete=models.CASCADE)
     course = models.CharField(max_length=255)
