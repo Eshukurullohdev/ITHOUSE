@@ -101,6 +101,22 @@ nav {
 .nav_right {
     display: flex;
     align-items: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.sertifikat {
+    background: #0066FF;
+    padding: 0px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .login {
@@ -113,29 +129,29 @@ nav {
 }
 
 .mega-btn {
-  background: #0066FF;
-  color: white;
-  border: none;
-  display: flex;
-  align-items: center;
-  align-items: center;
-  gap: 10px;
+    background: #0066FF;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    gap: 10px;
 
-  padding: 0px 20px;
-  border-radius: 4px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    padding: 0px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .mega-btn:hover {
-  background: linear-gradient(135deg, #66BB6A, #388E3C);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  transform: translateY(-3px);
+    background: linear-gradient(135deg, #66BB6A, #388E3C);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
 }
 
 

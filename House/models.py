@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 class Profesional(models.Model):
     jobs = models.CharField("Kasbi", max_length=100)
     def __str__(self):
@@ -43,3 +43,14 @@ class VideoUpload(models.Model):
     poster_video = models.ImageField(upload_to='posters/', blank=True, null=True)  # Video uchun poster
     uploaded_at = models.DateTimeField(auto_now_add=True) 
     
+    
+
+
+class Certificate(models.Model):
+    student = models.ForeignKey(User, on_delete=models.CASCADE)
+    course = models.CharField(max_length=255)
+    file = models.FileField(upload_to='certificates/')
+    issued_date = models.DateField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.student.username} - {self.course}"
