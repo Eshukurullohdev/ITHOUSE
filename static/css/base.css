@@ -181,6 +181,7 @@ nav {
 .green-heading {
     font-weight: 500;
     margin-bottom: 30px;
+    color: #222;
 }
 
 .intro_left h1 {
@@ -215,8 +216,10 @@ nav {
     display: inline-block;
     padding: 10px 30px;
     border-radius: 5px;
+    font-weight: 600;
+    color: #0066FF;
     letter-spacing: 2px;
-    border: 2px solid #96BB7C;
+    border: 2px solid #0066FF;
 }
 
 .learn_more:hover {
