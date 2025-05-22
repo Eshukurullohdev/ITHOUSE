@@ -84,7 +84,7 @@ header {
 .cart_filter__r {
   height: 100vh;
   width: 100%;
-  background-image: url(kurlar-img/photo_1_K.webp);
+  background-image: url(/static/img/kurlar-imgReact/photo_1_K.webp);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -968,7 +968,7 @@ ul li {
   <!-- nav -->
   <header>
     <div class="navbarContentK__r">
-      <img src="kurlar-img/it house logo.png" alt="Logo">
+      <img src="/static/img/kurlar-imgReact/it house logo.png" alt="Logo">
       <i class="fa-solid fa-bars" id="openMenuK__r"></i>
     </div>
   </header>
@@ -1413,7 +1413,52 @@ ul li {
 
   <!-- footer finish -->
 
-  <script src="reac.js"></script>
+  <script>
+    // Elementlarni tanlab olish
+const openMenuBtnK = document.getElementById("openMenuK__r");
+const closeMenuBtnK = document.getElementById("closeMenuK__r");
+const slideMenuK = document.getElementById("slideMenuK__r");
+
+// Menyuni ochish
+openMenuBtnK.addEventListener("click", function () {
+    slideMenuK.classList.add("active");
+});
+
+// Menyuni yopish
+closeMenuBtnK.addEventListener("click", function () {
+    slideMenuK.classList.remove("active");
+});
+
+
+
+const counters = document.querySelectorAll('.stat-value__r');
+
+counters.forEach(counter => {
+  const target = +counter.getAttribute('data-target');
+  const suffix = counter.getAttribute('data-suffix');
+  let count = 0;
+  const duration = 5000; 
+  const stepTime = Math.floor(duration / target);
+
+  const updateCount = () => {
+    count++;
+    counter.textContent = count + suffix;
+    if (count < target) {
+      setTimeout(updateCount, stepTime);
+    }
+  };
+
+  updateCount();
+});
+
+
+document.querySelectorAll('.faq-question__r').forEach(question => {
+    question.addEventListener('click', () => {
+      const item = question.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+  </script>
 </body>
 
 </html>
