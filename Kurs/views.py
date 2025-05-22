@@ -6,3 +6,7 @@ def kursPython(request):
 
 def kursEnglish(request):
     return render(request, 'kursEnglish.html')
+
+
+def kursReact(request):
+    return render(request, 'kursReact.html')
