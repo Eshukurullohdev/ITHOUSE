@@ -10,3 +10,6 @@ def kursEnglish(request):
 
 def kursReact(request):
     return render(request, 'kursReact.html')
+
+def kursRus(request):
+    return render(request, 'kursRus.html')
