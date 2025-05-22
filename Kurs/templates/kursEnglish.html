@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ingliz ili</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="medi.css">
+    <link rel="stylesheet" href="test.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .mentor-header_nav__i {
+        background-color: #2001ff;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .font-femiliy {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+    .contenir__i {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+    }
+
+    .navbarContentK__i {
+        height: 70px;
+        margin: 0 auto;
+        width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarContentK__i img {
+        width: 170px;
+        margin-top: 10px;
+        cursor: pointer;
+        height: 100px;
+    }
+
+    .navbarContentK__i i {
+        color: #fff;
+        font-size: 30px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .slideMenuK__i {
+        width: 100%;
+        height: 375px;
+        background-color: red;
+        position: fixed;
+        top: 0px;
+        transform: translateY(-500px);
+        transition: transform 0.4s ease;
+        z-index: 9999999999;
+    }
+
+    .slideMenuK__i.active {
+        transform: translateY(0);
+    }
+
+    .slideMenuK__i h1 {
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+
+    /* nav start  */
+
+    /* sectiom 1 satrt */
+
+    .container__i {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1250px;
+        position: relative;
+        top: 90px;
+        left: 120px;
+
+    }
+
+    .text-section__i {
+        flex: 1;
+        margin-left: 0;
+    }
+
+    .text-section__i h1 {
+        font-size: 48px;
+        margin-bottom: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .text-section__i h2 {
+        font-size: 36px;
+        margin-top: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .text-section__i p {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+
+    .features__i {
+        list-style: none;
+        padding: 0;
+        font-size: 16px;
+        margin-top: 60px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .features__i li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 30px;
+    }
+
+    .features__i li::before {
+        content: '✔';
+        position: absolute;
+        left: 0;
+        color: #2001ff;
+        font-size: 18px;
+    }
+
+    .image-section__i {
+        flex: 1;
+
+    }
+
+    .image-section__i img {
+        position: relative;
+        left: 10px;
+
+        width: 800px;
+        height: 600px;
+        padding-left: 2%;
+        padding-bottom: 7%;
+
+    }
+
+    /* section 1 finsh */
+
+    /* scetion 2 start */
+    .english-why__i {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+        left: -70px;
+        top: 150px;
+    }
+
+    .title__i {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #111;
+    }
+
+    .intro-text__i {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #222;
+        font-weight: bold;
+    }
+
+    .detailed-text__i {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #444;
+        font-weight: bold;
+        margin-bottom: 300px;
+    }
+
+    .photo__i {
+        background-image: url(/static/img/kurlar-img/english2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 900px;
+        height: 500px;
+        position: relative;
+        right: 50px;
+        border-radius: 25px;
+    }
+
+    /* section 2finsh */
+
+    /* section 3 satrt */
+
+    .section-why__i {
+        padding: 60px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-title__i {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        line-height: 1.4;
+        margin-top: 110px;
+    }
+
+    .features-grid-new__i {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        gap: 50px 60px;
+    }
+
+    .feature-box-new__i {
+        background-color: #fff;
+        width: 420px;
+    }
+
+    .icon-title__i {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .icon-title__i h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .check-icon__i {
+        color: #2001ff;
+        font-size: 18px;
+    }
+
+    .feature-box-new__i p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+    }
+
+
+
+
+    /* SECTION 3 FINSH */
+
+    /* section 4 satrt */
+
+    .mentor-section__i {
+        max-width: 1200px;
+        margin: auto;
+        padding-bottom: 100px;
+    }
+
+    .mentor-header__i {
+
+        background-color: #f6fafa;
+    }
+
+    .mentor-title__i {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 40px;
+        padding-top: 60px;
+
+    }
+
+    .mentor-content__i {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .mentor-card__i {
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .mentor-card__i,
+    .skills-card__i {
+        background-color: white;
+        border-radius: 20px;
+        padding: 40px 30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .mentor-photo__i {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 20px;
+    }
+
+    .mentor-role__i {
+        font-size: 14px;
+        color: gray;
+        margin-bottom: 10px;
+    }
+
+    .mentor-name__i {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .skills-title__i {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 20px;
+        position: relative;
+        left: -px;
+    }
+
+    .skills-list__i {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .skill-item__i {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .skill-icon__i {
+        color: #2001ff;
+        font-size: 18px;
+        margin-top: 4px;
+    }
+
+    .skills-card__i {
+        width: 650px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    /* section 4 finsh */
+
+
+    /* section 5 start */
+    .section5-title__i {
+        padding-top: 60px;
+        font-size: 37px;
+        font-weight: 700;
+    }
+
+    .circle-logo__i img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .circle-logo__i {
+        display: flex;
+        align-items: center;
+
+        padding-top: 5%;
+
+    }
+
+    .circle-logo__i p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-left: 1%;
+        padding-top: 0.5%;
+        font-weight: 600;
+        color: rgb(95, 95, 95);
+    }
+
+    /* section 5 finish */
+
+    /* section 6 start */
+    .section5-box_wrap__i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .section6 {
+        padding: 20px;
+    }
+
+    .section5-box__i {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .section5-box__img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .section5-box__i p {
+        padding-left: 1%;
+        padding-top: 0.5%;
+        font-weight: 600;
+        color: rgb(95, 95, 95);
+
+    }
+
+    .wrap6__i {
+        padding-top: 50px;
+
+
+    }
+
+    .section5_box__i {
+        background-color: rgb(238, 234, 234);
+        width: 350px;
+        height: 150px;
+        position: relative;
+        top: 200px;
+        text-align: center;
+        margin-right: 1%;
+        border-radius: 27px;
+    }
+
+    .section5_box-title__i {
+        padding-bottom: 10%;
+        padding-right: 5%;
+        padding-top: 5%;
+
+    }
+
+    .scetion5_box-title_2__i {
+        display: flex;
+        align-items: center;
+        margin-right: 90px;
+    }
+
+    .section5_box-title_3__i {
+        background-color: rgb(255, 255, 255);
+        margin-left: 35%;
+        width: 70px;
+        height: 30px;
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        padding-top: 2%;
+    }
+
+    .section5_box-title_4__i {
+        font-size: 13px;
+    }
+
+    .section5_box-2__i {
+        padding-top: 30px;
+        height: 250px;
+        position: relative;
+        top: 150px;
+    }
+
+    .scetion5_box-title_2-copiya__i {
+        position: relative;
+        bottom: -70px;
+    }
+
+    .section5_box-3__i {
+        padding-top: 30px;
+        height: 350px;
+        position: relative;
+        top: 100px;
+    }
+
+    .scetion5_box-title_3-copiya__i {
+        position: relative;
+        bottom: -25px;
+        left: 30px;
+    }
+
+    .section5_box-3__i img {
+        width: 250px;
+    }
+
+    /* section 6 finish */
+    .containert__i {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+
+    .title__i {
+        padding-top: 60px;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+    }
+
+    .subtitle__i {
+        color: #555;
+        margin-bottom: 40px;
+
+    }
+
+    .cards__i {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .p__i {
+        width: 420px;
+    }
+
+    .card__i {
+        background-color: #e7e7eb;
+        border-radius: 10px;
+        padding: 20px;
+        flex: 1 1 300px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card__i img {
+        width: 120px;
+        height: 120px;
+
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        position: relative;
+        left: -110px;
+    }
+
+    .image2__i {
+        position: relative;
+        top: -15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .card-list__i {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .card-list__i li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 24px;
+    }
+
+    .card-list__i li::before {
+        content: "✔";
+        color: #2001ff;
+        position: absolute;
+        left: 0;
+    }
+
+    .card-title2__i {
+        position: relative;
+        top: -15px;
+    }
+
+    .cart-list2__i {
+        position: relative;
+        top: -15px;
+    }
+
+    @media (max-width: 1140px) {
+
+
+        .navbarContentK__i {
+            width: 95%;
+        }
+
+        .image-section__i {
+            display: none;
+        }
+
+        .container__i {
+            left: 0;
+            padding: 20px;
+        }
+
+        .english-why__i {
+            width: 90%;
+            left: -10px;
+
+
+        }
+
+        .photo__i {
+            width: 310px;
+            height: 206px;
+            right: 0;
+            top: -70px;
+        }
+
+        .detailed-text__i {
+            margin-bottom: 220px;
+        }
+
+        .section-title__i {
+            font-size: 28px;
+        }
+
+        .features-grid-new__i {
+            grid-template-columns: 1fr;
+            padding: 0;
+
+        }
+
+
+        .icon-title__i h3 {
+            width: 270px;
+        }
+
+        .section-title__i {
+            font-size: 28px;
+        }
+
+        .skills-list__i {
+            grid-template-columns: 1fr;
+        }
+
+        .mentor-title__i {
+            font-size: 26px;
+        }
+
+        .mentor-content__i {
+            flex-direction: column;
+        }
+
+        .text-section__i {
+            position: relative;
+            top: 190px;
+        }
+
+        .mentor-content__i {
+            flex-direction: column;
+        }
+
+
+        .skills-card__i {
+            width: 90%;
+            height: 100vh;
+        }
+
+        .skills-list__i {
+
+            grid-template-columns: 1fr;
+        }
+
+        .skills-card__i {
+            width: 90%;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .mentor-card__i {
+            width: 320px;
+            height: 450px;
+            margin: 0 auto;
+        }
+
+        .section5-title__i {
+            font-size: 30px;
+            padding-left: 20px;
+
+        }
+
+        .circle-logo__i p {
+            font-size: 13px;
+
+
+        }
+
+        .circle-logo__i {
+            padding-left: 20px;
+            margin-top: 25px;
+        }
+
+        .section5-box_wrap__i {
+            flex-direction: column;
+            gap: 80px;
+        }
+
+        .section5-box_wrap__i {
+            position: relative;
+            top: -150px;
+        }
+
+    }
+
+    @media (max-width: 1140px) {
+
+
+        .navbarContentK__i {
+            width: 95%;
+        }
+
+        .image-section__i {
+            display: none;
+        }
+
+        .container__i {
+            left: 0;
+            padding: 20px;
+        }
+
+        .english-why__i {
+            width: 90%;
+            left: -10px;
+
+
+        }
+
+        .photo__i {
+            width: 310px;
+            height: 206px;
+            right: 0;
+            top: -70px;
+        }
+
+        .detailed-text__i {
+            margin-bottom: 220px;
+        }
+
+        .section-title__i {
+            font-size: 28px;
+        }
+
+        .features-grid-new__i {
+            grid-template-columns: 1fr;
+
+
+        }
+
+
+        .container__i {
+            position: relative;
+            top: -80px;
+        }
+
+        .title__i {
+            position: relative;
+
+        }
+
+        .subtitle__i {
+            margin: 0;
+        }
+
+        .skills-list__i {
+            grid-template-columns: 1fr;
+        }
+
+
+
+        .mentor-title__i {
+            margin-left: 20px;
+        }
+
+        .section-title__i {
+            margin-top: 0;
+        }
+
+        .skills-card__i {
+            width: 100%;
+            height: 100vh;
+        }
+    }
+</style>
+
+<body>
+    <!-- nav -->
+    <header class="mentor-header_nav__i">
+        <div class="navbarContentK__i">
+            <img src="/static/img/kurlar-img/it house logo.png" alt="Logo">
+            <i class="fa-solid fa-bars" id="openMenuK__i"></i>
+        </div>
+    </header>
+    <div class="slideMenuK__i" id="slideMenuK__i">
+        <h1 id="closeMenuK__i">X</h1>
+    </div>
+    <!-- nav -->
+    <!-- section 1  satrt-->
+    <div class="container__i contenir__i">
+        <div class="text-section__i">
+            <h1>Ingliz tili</h1>
+            <br>
+            <h2>kursi</h2>
+            <br>
+            <p>
+                <br>
+                Noldan Ingliz tili mutaxassisiga aylaning. Ingliz tili grammatikasi, so‘z <br> boyligini oshirish,
+                muloqot qilish, va yozuv ko‘nikmalarini o‘rganing. <br>
+                Kurs sizga tezda kasbga kirishga yordam beradi: siz ingliz tili o‘qituvchisi, <br>tarjimon, yoki
+                frilanser sifatida loyihalar ustida ishlashingiz mumkin.
+            </p>
+            <ul class="features__i">
+                <li>Ishga tayyorlash</li>
+                <li>Shaxsiy mentor yordami</li>
+                <li>Yopiq telegram kanalda kurs kuratorlari bilan ma’lumot</li>
+                <li>Planshetsiz bajarilishi mumkin, chizish talab qilinmaydi</li>
+                <li>Kurs yakunida sertifikat</li>
+            </ul>
+        </div>
+        <div class="image-section__i">
+            <img src="/static/img/kurlar-img/english.png" alt="Ingliz tili kursi rasmi">
+        </div>
+    </div>
+    <!-- sectiom 1 finsh -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Ingliz tili nima uchun kerak? bo‘limi -->
+    <div class="english-why__i contenir__i">
+        <h2 class="title__i">Ingliz tili nima uchun kerak?</h2>
+        <p class="intro-text__i">
+            Ingliz tili mutaxassisi tilni o‘rganish, tarjima qilish va kommunikatsiya sohalarida ishlaydi.
+        </p>
+        <p class="detailed-text__i">
+            Matnlarni tarjima qilish, grammatika va stilni to‘g‘ri qo‘llash, tilni o‘rgatish va o‘rgatuvchi materiallar
+            tayyorlash –
+            bularning barchasi ingliz tili mutaxassislarining vazifalari hisoblanadi. Masalan, ingliz tilida og‘zaki va
+            yozma
+            muloqot, akademik va professional matnlarni yaratish, va ingliz tilida ta’lim berish orqali tilni yanada
+            rivojlantirish uchun turli metodlardan foydalaniladi.
+        </p>
+    </div>
+
+    <div class="photo__i contenir__i">
+    </div>
+
+
+    <!-- SECTION 3 START -->
+    <section class="section-why__i">
+        <h2 class="section-title__i">Kasbda boshlash uchun kerak bo'lgan hamma <br> narsani o'rgatamiz</h2>
+
+        <div class="features-grid-new__i">
+            <div class="feature-box-new__i">
+                <div class="icon-title__i">
+                    <i class="fa-solid fa-circle-check check-icon__i"></i>
+                    <h3>Ingliz tili asoslari</h3>
+                </div>
+                <p>
+                    Biz darslarimizni ingliz tili grammatikasi, lug‘atni rivojlantirish va samarali muloqot qilish
+                    strategiyalaridan boshlaymiz.
+                    Sizning kreativ fikrlash qobiliyatingizni va ingliz tilini o‘rganish mahoratingizni oshirishga
+                    yordam beramiz.
+                </p>
+            </div>
+
+            <div class="feature-box-new__i">
+                <div class="icon-title__i">
+                    <i class="fa-solid fa-circle-check check-icon__i"></i>
+                    <h3>Ingliz tili o‘rganish vositalari va platformalar</h3>
+                </div>
+                <p>
+                    Biz ingliz tilini o‘rganish uchun asosiy resurslar va vositalarni o‘rganamiz: grammatik kitoblar,
+                    onlayn platformalar,
+                    til o‘rganish ilovalari va ta’lim veb-saytlari. Til o‘rganish usullari, talaffuzni takomillashtirish
+                    va muloqot qilish
+                    ko‘nikmalarini batafsil ko‘rib chiqamiz.
+                </p>
+            </div>
+
+            <div class="feature-box-new__i">
+                <div class="icon-title__i">
+                    <i class="fa-solid fa-circle-check check-icon__i"></i>
+                    <h3>Amaliy ko'nikmalar</h3>
+                </div>
+                <p>
+                    Siz ingliz tilida o‘qish, yozish, gapirish va tinglashni mashq qilasiz. Ingliz tilida insho yozish,
+                    muhokamalarda ishtirok etish
+                    va yozma hamda og‘zaki ingliz tilini o‘rganish qobiliyatingizni rivojlantirasiz.
+                </p>
+            </div>
+
+            <div class="feature-box-new__i">
+                <div class="icon-title__i">
+                    <i class="fa-solid fa-circle-check check-icon__i"></i>
+                    <h3>Yumshoq ko'nikmalar va o'zini o'zi taqdim etish</h3>
+                </div>
+                <p>
+                    Ingliz tilini muvaffaqiyatli o‘rganish uchun boshqalar bilan muloqot qilish, fikrlaringizni aniq
+                    tushuntirish,
+                    tanqidlarni qabul qilish va g‘oyalarni ishonchli tarzda taqdim etish muhimdir.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- section 3 finsh -->
+
+
+    <!-- SECTION 4 START-->
+    <header class="mentor-header__i">
+        <section class="mentor-section__i">
+            <h2 class="mentor-title__i">
+                Biz sizga Ingliz tilini asosiy ko'nikmalarini <br> o'rgatamiz
+            </h2>
+            <div class="mentor-content__i">
+                <div class="mentor-card__i">
+                    <img src="/static/img/kurlar-img/sevara.jpg" alt="Sevara Jo'rayeva" class="mentor-photo__i" />
+                    <div class="mentor-role__i">Mentor</div>
+                    <div class="mentor-name__i">Sevara <br> Jo'rayeva</div>
+                </div>
+                <div class="skills-card__i">
+                    <div class="skills-title__i">Ko'nikmalar</div>
+                    <div class="skills-list__i">
+                        <div class="skill-item__i">
+                            <i class="fa-solid fa-check-circle skill-icon__i"></i>
+                            <div>Grammatika, so’z boyligini oshirish va gap tuzishni o‘rganamiz.</div>
+                        </div>
+                        <div class="skill-item__i">
+                            <i class="fa-solid fa-check-circle skill-icon__i"></i>
+                            <div>Ingliz tilida yozish va og‘zaki muloqotni takomillashtiramiz, aniq va ravon ifodalashni
+                                o‘rganamiz.</div>
+                        </div>
+                        <div class="skill-item__i">
+                            <i class="fa-solid fa-check-circle skill-icon__i"></i>
+                            <div>Ingliz tili grammatikasini o‘rganib, so‘z boyligini kengaytirishga yordam beramiz.
+                            </div>
+                        </div>
+                        <div class="skill-item__i">
+                            <i class="fa-solid fa-check-circle skill-icon__i"></i>
+                            <div>Inglizchada professional yozuvlarni ko‘nikmalarini o‘rgatamiz</div>
+                        </div>
+                        <div class="skill-item__i">
+                            <i class="fa-solid fa-check-circle skill-icon__i"></i>
+                            <div>Nutq va tinglash ko‘nikmalarini rivojlantirish</div>
+                        </div>
+                        <div class="skill-item__i">
+                            <i class="fa-solid fa-check-circle skill-icon__i"></i>
+                            <div>Ijtimoiy tarmoqlar uchun optimallashtirilgan reklama kampaniyalarini yaratish</div>
+                        </div>
+                        <div class="skill-item__i">
+                            <i class="fa-solid fa-check-circle skill-icon__i"></i>
+                            <div>Ingliz tilida o‘qish va matnlarni tahlil qilish ko‘nikmalari.</div>
+                        </div>
+                        <div class="skill-item__i">
+                            <i class="fa-solid fa-check-circle skill-icon__i"></i>
+                            <div>Suhbatlashish va muloqot qilish ko‘nikmalarini oshiramiz.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- SECTION 4 FINSH -->
+    <!-- Section 6 start -->
+    <section class="section6 contenir__i">
+        <div class="wrap6__i">
+            <h2>Tajriba bilan daromad oshadi</h2>
+
+            <div class="section5-box__i">
+                <img class="section5-box__img" src="/static/img/kurlar-img/image.png" alt="hh">
+                <p class="p__i">hh.uz ma'lumotlariga ko'ra, Ingliz tili mutaxassisi o'rtacha ish haqi 9 500 000 tashkil
+                    qiladi</p>
+            </div>
+
+        </div>
+
+        <div class="section5-box_wrap__i">
+            <!-- Junior -->
+            <div class="section5_box__i">
+                <h2 class="section5_box-title__i">7 200 000</h2>
+                <div class="scetion5_box-title_2__i">
+                    <div class="section5_box-title_3__i">
+                        <p class="section5_box-title_4__i">Junior</p>
+                    </div>
+                    <p style="margin-left: 10px;">1 yilgacha</p>
+                </div>
+            </div>
+
+            <!-- Middle -->
+            <div class="section5_box__i section5_box-2__i">
+                <h2 class="section5_box-title__i">12 000 000</h2>
+                <div class="scetion5_box-title_2__i scetion5_box-title_2-copiya__i">
+                    <div class="section5_box-title_3__i">
+                        <p class="section5_box-title_4__i">Middle</p>
+                    </div>
+                    <p style="margin-left: 10px;">1-3 yilgacha</p>
+                </div>
+            </div>
+
+            <!-- Senior -->
+            <div class="section5_box__i section5_box-3__i">
+                <h2 class="section5_box-title__i">30 000 000</h2>
+                <img src="/static/img/kurlar-img/cheksiz belgisi.png" alt="infinity">
+                <div class="scetion5_box-title_2__i scetion5_box-title_3-copiya__i">
+                    <div class="section5_box-title_3__i">
+                        <p class="section5_box-title_4__i">Senior</p>
+                    </div>
+                    <p style="margin-left: 10px;">3+ yil</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 6 end -->
+
+
+    <div class="containert__i">
+        <h1 class="title__i">Ushbu kurs kimlarga to'g'ri keladi</h1>
+        <p class="subtitle__i">Biz Ingliz tili yo'nalishini shu narsalarni istagan o'quvchilar uchun qildik</p>
+
+        <div class="cards__i">
+            <!-- Card 1 -->
+            <div class="card__i">
+                <img src="/static/img/kurlar-img/studeeen.jpg" alt="Student 1" class="image__i">
+                <div class="card-title">Kasbni noldan boshlab o'rganish</div>
+                <ul class="card-list__i">
+                    <li>Boshlash uchun maxsus bilim talab etilmaydi</li>
+                    <li>Amaliy ko'nikmalarga ega bo'lasiz</li>
+                    <li>Kelajakda ish topishga yordam beradigan jozibali portfolioingizni to'plang</li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card__i">
+                <img src="/static/img/kurlar-img/studeen2.jpg" alt="Student 2" class="image__i">
+                <div class="card-title">Bilimlarni tizimlashtirish va Ingliz tilini o'z kasbingiz qiling</div>
+                <ul class="card-list__i">
+                    <li>Asosiy bilimlaringizni chuqurlashtiring</li>
+                    <li>Ingliz tilida so'zlash mahoratingizni oshiring</li>
+                    <li>Portfolioingizni yangi keyslar bilan to'ldiring</li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card__i">
+                <img src="/static/img/kurlar-img/studentik3.png" alt="Student 3" class="image__i">
+                <div class="card-title">Marketolog, muharrir va boshqa kasblar uchun qo'shimcha oling</div>
+                <ul class="card-list__i">
+                    <li>Siz biznes vazifalari hal qila olasiz</li>
+                    <li>Ko'proq daromad olasiz</li>
+                    <li>Oson va tez ishlashni o‘rganasiz</li>
+                    <li>Boshqa hamkasblarga qaraganda qo'shimcha bilimga ega bo'ling</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
