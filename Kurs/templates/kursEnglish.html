@@ -17,6 +17,7 @@
         padding: 0;
         box-sizing: border-box;
     }
+
     .mentor-header_nav__i {
         background-color: #2001ff;
         width: 100%;
@@ -810,13 +811,34 @@
             height: 100vh;
         }
     }
+
+    .english__i_m {
+        width: 261px;
+        height: 64px;
+        border-radius: 30px;
+        position: relative;
+        top: 50px;
+        background-color: #fff;
+        border: 3px solid #2001ff;
+        color: #2001ff;
+        margin: 0 auto;
+        bottom: 50px;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
 </style>
 
 <body>
     <!-- nav -->
     <header class="mentor-header_nav__i">
         <div class="navbarContentK__i">
-            <img src="/static/img/kurlar-img/it house logo.png" alt="Logo">
+            <a href="{% url 'home' %}">
+
+                <img src="/static/img/kurlar-img/it house logo.png" alt="Logo">
+            </a>
             <i class="fa-solid fa-bars" id="openMenuK__i"></i>
         </div>
     </header>
@@ -1089,6 +1111,7 @@
                 </ul>
             </div>
         </div>
+        <a href="https://ithouse.edutizim.uz/order/entry/?survey=s33" class="english__i_m">Ro'yxatdan o'tish</a>
     </div>
 
 </body>

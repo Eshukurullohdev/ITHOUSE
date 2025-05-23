@@ -142,7 +142,7 @@
                 </div>
             </div>
         </a>
-        <a href="management.html" class="cardN frontend">
+        <a href="{% url 'kursFrontend' %}" class="cardN frontend">
             <div class="cardN-content">
                 <img src="/static/img/front.jpg" alt="Frontend dasturlash" class="cardN-img">
                 <div class="cardN-text">
@@ -184,7 +184,28 @@
                 </div>
             </div>
         </a>
-        <a href="business.html" class="cardN english">
+         <a href="{% url 'kursReact' %}" class="cardN backend">
+            <div class="cardN-content">
+                <img src="https://najottalim.uz/_next/image?url=https%3A%2F%2Fnws.cdn.najottalim.uz%2Fmain-server%2Fcourses%2FPython_279793f4-74b5-40eb-ad5a-3458c8f7b1cc.png&w=256&q=75" alt="Backend dasturlash" class="cardN-img">
+                <div class="cardN-text">
+                    <div class="topic">React</div>
+                    <div class="courses">2 oy</div>
+                </div>
+            </div>
+            <div class="info-section">
+                <div class="format-container">
+                    <div class="info-item online">
+                        <i class="fas fa-laptop"></i>
+                        <span>Online</span>
+                    </div>
+                    <div class="info-item offline">
+                        <i class="fas fa-building"></i>
+                        <span>Offline</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'kursEnglish' %}" class="cardN english">
             <div class="cardN-content">
                 <img src="https://plus.unsplash.com/premium_photo-1674591172569-834e3c928c3d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Ingliz tili" class="cardN-img">
@@ -206,7 +227,7 @@
                 </div>
             </div>
         </a>
-        <a href="audio.html" class="cardN russian">
+        <a href="{% url 'kursRus' %}" class="cardN russian">
             <div class="cardN-content">
                 <img src="https://plus.unsplash.com/premium_photo-1675865395368-538e9b779847?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8UlVTU0lBTiUyMGZsYWd8ZW58MHx8MHx8fDA%3D"
                     alt="Rus tili" class="cardN-img">
@@ -228,7 +249,7 @@
                 </div>
             </div>
         </a>
-        <a href="audio.html" class="cardN russian">
+        <a href="{% url 'kursEnglish' %}" class="cardN russian">
             <div class="cardN-content">
                 <img src="https://plus.unsplash.com/premium_photo-1675865395368-538e9b779847?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8UlVTU0lBTiUyMGZsYWd8ZW58MHx8MHx8fDA%3D"
                     alt="Rus tili" class="cardN-img">

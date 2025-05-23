@@ -13,3 +13,6 @@ def kursReact(request):
 
 def kursRus(request):
     return render(request, 'kursRus.html')
+
+def kursFrontend(request):
+    return render(request, 'kursFrontend.html')

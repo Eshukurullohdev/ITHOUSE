@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kurslar</title>
-  <link rel="stylesheet" href="reac.css">
-  <link rel="stylesheet" href="reac.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
     * {
@@ -84,7 +79,7 @@ header {
 .cart_filter__r {
   height: 100vh;
   width: 100%;
-  background-image: url(/static/img/kurlar-imgReact/photo_1_K.webp);
+  background-image: url(/static/img/kurlar-imgFrontend/photo_1_K.webp);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -965,12 +960,12 @@ ul li {
 }
 </style>
 <body>
-  <!-- nav -->
-  <header>
+     <header>
     <div class="navbarContentK__r">
-      <a href="{% url 'home' %}">
-        <img src="/static/img/kurlar-imgReact/it house logo.png" alt="Logo">
-      </a>
+    <a href="{% url 'home' %}">
+
+        <img src="/static/img/kurlar-imgFrontend/it house logo.png" alt="Logo">
+    </a>
       <i class="fa-solid fa-bars" id="openMenuK__r"></i>
     </div>
   </header>
@@ -981,8 +976,8 @@ ul li {
 
   <!-- cart_filter -->
   <div class="cart_filter__r">
-    <h1> <span>Frontend:</span>  React</h1>
-    <p>Dasturlashni qulay muhitda «IT HOUSE»da o'rganing!</p>
+    <h1>  <span>Frontend:</span> <br>HTML, CSS, JavaScript</h1>
+    <p>web-dasturlash asoslarini «IT HOUSE»da o‘rganing!</p>
   </div>
   <!-- cart_filter -->
 
@@ -1050,17 +1045,17 @@ ul li {
 
   <!--section 3 contenir start  -->
   <div class="box_info_r">
-    <p><b>React</b> — Java Script dasturlash tilining kutubxonasi hisoblanib, <b>interaktiv veb-sahifalarni</b> yaratishda foydalaniladi.</p>
-    <br>
-    <p>React asosan <b>bir sahifali</b> va <b>ko'p sahifali ilovalar</b> uchun interfeyslarni yaratish va katta saytlarni ishlab chiqish uchun ishlatiladi.</p>
-<br>
-    <p>React'ning yordami bilan <b>Netflix streaming</b> xizmati yozildi va eng yirik ijtimoiy tarmoqlarning yangiliklar sahifalari joriy etila boshlandi.</p>
-<br>
+    <p><b>Frontend</b> — bu foydalanuvchi ko‘radigan va foydalanadigan veb-sahifa qismlarini yaratish jarayonidir.</p>
+    <br />
+    <p>Ushbu kursda siz <b>HTML, CSS, JavaScript</b> orqali web-saytlar yaratishni o‘rganasiz.</p>
+    <br />
+    <p>Frontend dasturchilar bugungi kunda ko‘plab kompaniyalarda talabgir bo‘lib, masofaviy ishlash imkoniyatiga ham egadirlar.</p>
+    <br />
     <ul>
-      <li>Yandex;</li>
-      <li>Uber;</li>
-      <li>Sberbank</li>
-      <li>Avito va BBC kabi yirik kompaniyalar foydalangan.</li>
+      <li>Google;</li>
+      <li>Meta (Facebook);</li>
+      <li>Amazon;</li>
+      <li>Hamda mahalliy IT kompaniyalar siz kabi mutaxassislarga muhtoj.</li>
     </ul>
   </div>
   <!-- section 3 contenir finsh -->
@@ -1071,34 +1066,12 @@ ul li {
   <section class="section__r">
     <h2>Kursda nimalarni o'rganasiz?</h2>
     <div class="features__r">
-      <div class="feature-item__r">
-        <div class="feature-icon__r">1</div>
-        <p>Dasturlashga oid ma’lum bir ko’nikmalar, algoritmlar, dasturlash va uning mashhur yo’nalishlari bo'yicha tushuncha</p>
-      </div>
-      <div class="feature-item__r">
-        <div class="feature-icon__r">2</div>
-        <p>HTML, CSS</p>
-      </div>
-      <div class="feature-item__r">
-        <div class="feature-icon__r">3</div>
-        <p>SASS, BOOTSTRAP</p>
-      </div>
-      <div class="feature-item__r">
-        <div class="feature-icon__r">4</div>
-        <p>	
-          JAVASRCIPT Core</p>
-      </div>
-      <div class="feature-item__r">
-        <div class="feature-icon__r">5</div>
-        <p>	
-          JAVASCRIPT DOM, Native</p>
-      </div>
-      <div class="feature-item__r">
-        <div class="feature-icon__r">6</div>
-        <p>	
-          REACT, REDUX, TYPESCRIPT kabi bilimlar va ko’nikmalarga ega bo’lasiz
-</p>
-      </div>
+      <div class="feature-item__r"><div class="feature-icon__r">1</div><p>Veb-dasturlash asoslari va mantiqiy fikrlash</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">2</div><p>HTML5 bilan sahifa tuzilmasi yaratish</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">3</div><p>CSS3 yordamida dizayn va responsivlik</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">4</div><p>JavaScript asoslari va DOM manipulation</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">5</div><p>Figma’dan dizayn olib, saytga aylantirish</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">6</div><p>Bootstrap bilan tez va zamonaviy sahifalar yaratish</p></div>
     </div>
 
     <div class="requirements__r">
@@ -1231,29 +1204,29 @@ ul li {
     <div class="card-row__r">
       <div class="price-card__r">
         <p class="card-title__r green__r">Oyma-oy to'lov</p>
-        <p class="price__r">390 ming so'm</p>
-        <p class="desc__r">Oyma-oy to'lov narxi: 390 000 ming so'm</p>
+        <p class="price__r">320 ming so'm</p>
+        <p class="desc__r">Oyma-oy to'lov narxi: 320 000 ming so'm</p>
         <a href="https://ithouse.edutizim.uz/order/entry/?survey=s33">
 
-          <button class="btn__r">Ro'yxatdan o'tish</button>
+            <button class="btn__r">Ro'yxatdan o'tish</button>
         </a>
       </div>
       <div class="price-card__r">
         <p class="card-title__r green__r">Individual </p>
         <p class="price__r">3 milyon 800 ming</p>
         <p class="desc__r">Ikkiga bo'lib to'lov qilish: 1 mln 900so'm, umumiy 3 mln 800 so'm</p>
-        <a href="https://ithouse.edutizim.uz/order/entry/?survey=s33">
+   <a href="https://ithouse.edutizim.uz/order/entry/?survey=s33">
 
-          <button class="btn__r">Ro'yxatdan o'tish</button>
+            <button class="btn__r">Ro'yxatdan o'tish</button>
         </a>
       </div>
       <div class="price-card__r">
         <p class="card-title__r green__k">Bittada umumiy to'lov</p>
         <p class="price__r">3 mln so'm</p>
         <p class="desc__r">Bittada umumiy to'lov qilinsa: 800 ming so'm tejab qolasi</p>
-        <a href="https://ithouse.edutizim.uz/order/entry/?survey=s33">
+      <a href="https://ithouse.edutizim.uz/order/entry/?survey=s33">
 
-          <button class="btn__r">Ro'yxatdan o'tish</button>
+            <button class="btn__r">Ro'yxatdan o'tish</button>
         </a>
       </div>
     </div>
@@ -1391,7 +1364,7 @@ ul li {
       </div>
       <a href="https://ithouse.edutizim.uz/order/entry/?survey=s33">
 
-        <button class="btn__r btn2__r">Ro'yxatdan o'tish</button>
+          <button class="btn__r btn2__r">Ro'yxatdan o'tish</button>
       </a>
     </div>
   </section>
@@ -1423,9 +1396,6 @@ ul li {
       <a href="#"><i class="fab fa-tiktok"></i></a>
     </div>
   </div>
-
-  <!-- footer finish -->
-
   <script>
     // Elementlarni tanlab olish
 const openMenuBtnK = document.getElementById("openMenuK__r");
@@ -1473,5 +1443,4 @@ document.querySelectorAll('.faq-question__r').forEach(question => {
   });
   </script>
 </body>
-
 </html>

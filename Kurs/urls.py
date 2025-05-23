@@ -6,4 +6,5 @@ urlpatterns = [
     path("kursEnglish/", kursEnglish, name="kursEnglish"),
     path("kursReact/", kursReact, name="kursReact"),
     path("kursRus/", kursRus, name="kursRus"),
+    path("kursFrontend/", kursFrontend, name="kursFrontend"),
 ]
