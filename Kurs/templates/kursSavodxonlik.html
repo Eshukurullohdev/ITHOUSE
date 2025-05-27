@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurslar</title>
+  <link rel="stylesheet" href="savotxonlik.css">
+  <link rel="stylesheet" href="savotxonlik.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Fugaz+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
+  background-color: #2001ff;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbarContentK__r {
+  height: 70px;
+  margin: 0 auto;
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarContentK__r img {
+  width: 170px;
+  margin-top: 10px;
+  cursor: pointer;
+  height: 100px;
+}
+
+.navbarContentK__r i {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.slideMenuK__r {
+  width: 100%;
+  height: 375px;
+  background-color: red;
+  position: fixed;
+  top: 0px;
+  transform: translateY(-500px);
+  transition: transform 0.4s ease;
+  z-index: 9999999999;
+}
+
+.slideMenuK__r.active {
+  transform: translateY(0);
+}
+
+.slideMenuK__r h1 {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/* nav bar finish */
+
+/* cart_filter start */
+
+.cart_filter__r {
+  height: 100vh;
+  width: 100%;
+  background-image: url(kurlar-img/photo_2.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+}
+
+.cart_filter__r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart_filter__r h1 {
+  font-size: 92px;
+  font-family: "Fugaz One", sans-serif;
+  color: #2001ff;
+  text-align: center;
+}
+
+.cart_filter__r h1 span {
+  color: #fff;
+}
+
+.cart_filter__r p {
+  font-size: 24px;
+  margin-top: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+/* cart_filter finish */
+
+/* sparkles start */
+.sparkles__r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  fill: #333;
+  /* Rangi */
+}
+
+/* sparkles finsh  */
+
+/* stats-container start */
+
+.stats-container__r {
+  display: flex;
+  gap: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.stat-block__r {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  min-width: 100px;
+}
+
+.stat-value__r {
+  font-size: 45px;
+  font-weight: bold;
+  color: #2001ff;
+}
+
+.stat-label__r {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* stats-container finish */
+
+/* marquee-container start */
+
+.marquee-container__r {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2001ff;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee-text__r {
+  display: inline-block;
+  animation: scroll-left 7s linear infinite;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-right: 50px;
+  /* so'zlar oralig'i */
+}
+
+.marquee-track__r {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* marquee-container finish */
+
+/* <!--section 3 contenir start  --> */
+
+.container__r {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container__r h1 {
+  margin-bottom: 70px;
+}
+
+.container__r h1,
+h2 {
+  text-align: center;
+  font-size: 37px;
+}
+
+.color2001ff__r {
+  color: #2001ff;
+}
+
+.feature__r {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.feature__r p {
+  line-height: 1.5;
+}
+
+.feature__r img {
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+}
+
+.feature__r ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}
+
+.hr__r {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 260px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.feature-3__r {
+  margin-top: 40px;
+}
+
+/* <!--section 3 contenir finsh  --> */
+
+/* video-section start  */
+
+.video-section__r {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.video-frame__r {
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.double-arrow__r {
+  font-size: 30px;
+  color: #2001ff;
+  margin: 1.5rem 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-section__r iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.underline__r {
+  width: 60%;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* video-section finish  */
+
+/* section 4 start */
+
+.section__r {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section__r h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #a57d48;
+}
+
+.features__r {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.feature-item__r {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.5;
+  gap: 20px;
+}
+
+.feature-icon__r {
+  border: 2px solid #2001ff;
+  color: #000000;
+  border-radius: 50%;
+  font-weight: bold;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.requirements__r {
+  margin-top: 60px;
+}
+
+.requirements-title__r {
+  font-size: 37px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.requirements-title__r .color2001ff__r {
+  color: #2001ff;
+  font-weight: 600;
+}
+
+.requirement-list__r {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:0px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.requirement-item__r {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 22px;
+}
+
+.requirement-item-2__r {
+  position: relative;
+  left: -55px;
+}
+
+.requirement-item-3__r {
+  position: relative;
+  left: 90px;
+}
+
+.requirement-item__r {
+  margin-top: 50px;
+}
+
+.requirement-item__r img {
+  width: 40px;
+  height: 40px;
+}
+
+.requirement-text__r {
+  display: flex;
+  flex-direction: column;
+}
+
+.requirement-text__r strong {
+  font-weight: 600;
+}
+
+.register-btn__r {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 12px 25px;
+  border: 1px solid #2001ff;
+  color: #2001ff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  left: -50px;
+}
+
+.register-btn__r:hover {
+  background-color: #2001ff;
+  color: white;
+}
+
+/* section 4 finish */
+
+/* section5 start Dasturlash yo'nalishidagi bitiruvchilarimizning ishga kirish ko'rsatkichi */
+
+.section5__r {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.title__r {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.subtitle__r {
+  font-size: 16px;
+  color: #8a6f46;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.stats-row__r {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.stat-box__r {
+  width: 30%;
+  min-width: 160px;
+  margin: 10px 0;
+}
+
+.stat-number__r {
+  font-size: 42px;
+  font-weight: bold;
+  color: #2001ff;
+  margin-bottom: 20px;
+}
+
+.stat-number1__r {
+  font-size: 52px;
+  font-weight: bold;
+  color: #2001ff;
+  margin-bottom: 20px;
+}
+
+.stat-label__r {
+  font-size: 18px;
+  color: #222;
+  margin-top: 25px;
+}
+
+.divider__r {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.income-title__r {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.arrow__r {
+  font-size: 60px;
+  color: #2001ff;
+  margin-top: 10px;
+  position: relative;
+  top: -10px;
+}
+
+.hr1__r {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 500px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* section5 finsh Dasturlash yo'nalishidagi bitiruvchilarimizning ishga kirish ko'rsatkichi */
+
+/* pricing-section start */
+
+.pricing-section__r {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.main-title__r {
+  color: #2001ff;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-row__r {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 130px;
+}
+
+.price-card__r {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  width: 30%;
+  min-width: 250px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  height: 501px;
+  padding: 30px;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.card-title__r {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2001ff;
+  margin-bottom: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.price__r {
+  font-size: 38px;
+  font-weight: bold;
+  position: relative;
+  top: 70px;
+  margin-bottom: 130px;
+}
+
+.desc__r {
+  font-size: 18px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: auto;
+}
+
+.btn__r {
+  background-color: #2001ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: auto;
+}
+
+.btn__r:hover {
+  background-color: #ffff;
+  color: #2001ff;
+  border: 1px solid #2001ff;
+}
+
+/* pricing-section finish */
+
+/* section 6 start */
+.faq-title__r {
+  text-align: center;
+  color: #2001ff;
+  margin-bottom: 30px;
+}
+
+.faq-item_wrap__r {
+  max-width: 780px;
+  margin: 0 auto;
+
+}
+
+.faq-item__r {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+  line-height: 1.5;
+}
+
+.faq-question__r {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 23px;
+  transition: color 0.2s ease;
+}
+
+.faq-question__r:hover {
+  color: #2001ff;
+}
+
+.faq-toggle__r {
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+  padding-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  color: #888;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 50;
+}
+
+.lh__r {
+  line-height: 3;
+}
+
+.faq-toggle__r:hover {
+  color: #2001ff;
+  background-color: #ffff;
+  border: 1px solid #2001ff;
+}
+
+.faq-answer__r {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 20px;
+  color: #444;
+}
+
+.faq-item__r.open .faq-answer__r {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.faq-item__r.open .faq-toggle__r {
+  transform: rotate(45deg);
+  color: #2001ff;
+}
+
+.btn2__r {
+  width: 261px;
+  height: 64px;
+  border-radius: 30px;
+  position: relative;
+  top: 50px;
+  background-color: #fff;
+  border: 3px solid #2001ff;
+  color: #2001ff;
+  margin: 0 auto;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.btn2__r:hover {
+  background-color: #2001ff;
+  color: #fff;
+}
+
+/* section 6 finish */
+
+/* foter  start*/
+.footer-nav__r {
+  background-color: #2001ff;
+  color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+  height: 74px;
+  width: 100%;
+  padding-top: 30px;
+  position: relative;
+  top: 30px;
+}
+
+.footer-nav__r ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.footer-nav__r ul li {
+  transition: transform 0.3s ease;
+}
+
+.footer-nav__r ul li:hover {
+  transform: translateY(-3px);
+}
+
+.footer-social__r {
+  background-color: #2001ff;
+  color: white;
+  text-align: center;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  border-top: 1px solid black;
+}
+
+.footer-text__r {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: relative;
+  top: 10px;
+  margin-bottom: 25px;
+}
+
+.social-icons__r {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons__r a {
+  color: #2001ff;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-icons__r a:hover {
+  transform: scale(1.1);
+}
+
+.footer-social__r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.dasturlash__r {
+  position: relative;
+  top: 40px;
+  text-transform: uppercase;
+}
+
+/* foter */
+
+
+.box_info_r {
+  border: 3px solid #2001ff;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 50px auto;
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+.box_info_r b {
+  font-weight: bold;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+/* Media uchun */
+@media (max-width: 1140px) {
+  .feature__r {
+      text-align: left;
+  }
+  
+  .navbarContentK__r {
+      width: 95%;
+  }
+  
+  .cart_filter__r h1 {
+      font-size: 50px;
+  }
+  
+  .stats-container__r {
+      flex-direction: column;
+      gap: 30px;
+  }
+  
+  .video-section__r iframe {
+      width: 390px;
+      height: 219px;
+  }
+  
+  .requirement-item-2__r {
+      left: 0;
+  }
+  
+  .requirement-item-3__r {
+      left: 0;
+  }
+  
+  .register-btn__r {
+      left: 0;
+  }
+  
+  .requirement-item__r {
+      gap: 0px;
+  }
+  
+  .divider__r {
+      display: none;
+  }
+  
+  .hr__r {
+      margin: 0;
+      left: 0;
+      padding: 0;
+      width: 150px;
+  }
+  
+  .card-row__r {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .price-card__r {
+      width: 100%;
+      height: 501px;
+  }
+  
+  .price__r {
+      top: 50px;
+      margin-bottom: 80px;
+  }
+  
+  .btn__r {
+      margin-top: 20px;
+  }
+  
+  .card-row__r {
+      margin-top: 70px;
+  }
+  
+  .faq-item_wrap__r {
+      padding: 20px;
+  }
+  
+  .faq-toggle__r {
+      width: 35px;
+      height: 30px;
+      font-size: 20px;
+      display: flex;
+      padding-left: 2px;
+      padding-top: 5px;
+  }
+  
+  .footer-nav__r {
+      height: auto;
+      top: 0;
+      padding: 20px 10px;
+  }
+  
+  .footer-nav__r ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px 30px;
+  }
+  
+  .footer-nav__r ul li {
+      width: 45%;
+      text-align: center;
+  }
+  
+  .footer-social__r {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 10px;
+      height: auto;
+  }
+  
+  .footer-text__r {
+      position: static;
+      margin-bottom: 10px;
+      font-size: 16px;
+      text-align: center;
+  }
+  
+  .social-icons__r {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+  }
+  
+  .social-icons__r a {
+      width: 36px;
+      height: 36px;
+      font-size: 16px;
+  }
+}
+</style>
+<body>  
+  <!-- nav -->  
+  <header>
+    <div class="navbarContentK__r">
+      <img src="kurlar-img/it house logo.png" alt="Logo">
+      <i class="fa-solid fa-bars" id="openMenuK__r"></i>
+    </div>
+  </header>
+  <div class="slideMenuK__r" id="slideMenuK__r">
+    <h1 id="closeMenuK__r">X</h1>
+  </div>
+  <!-- nav -->
+
+  <!-- cart_filter -->
+  <div class="cart_filter__r">
+    <h1>  <span><br>Wort ||  Exzel <br> power point, scrich </span></h1>
+    <p>Savodxonlikni qulay muhitda «IT HOUSE»da o‘rganing!</p>
+  </div>
+  <!-- cart_filter -->
+
+  <!-- marquee-container start -->
+  <div class="marquee-container__r">
+    <div class="marquee-track__r">
+      <span class="marquee-text__r">• Kelajak kasblarini biz bilan o'rganing!</span>
+      <span class="marquee-text__r">• Kelajak kasblarini biz bilan o'rganing!</span>
+      <span class="marquee-text__r">• Kelajak kasblarini biz bilan o'rganing!</span>
+      <span class="marquee-text__r">• Kelajak kasblarini biz bilan o'rganing!</span>
+      <span class="marquee-text__r">• Kelajak kasblarini biz bilan o'rganing!</span>
+      <span class="marquee-text__r">• Kelajak kasblarini biz bilan o'rganing!</span>
+      <span class="marquee-text__r">• Kelajak kasblarini biz bilan o'rganing!</span>
+      <span class="marquee-text__r">• Kelajak kasblarini biz bilan o'rganing!</span>
+    </div>
+  </div>
+  <!-- marquee-container finsh -->
+
+  <!-- sparkles start -->
+  <div class="sparkles__r">
+    <!-- Yulduzcha SVG -->
+    <svg viewBox="0 0 24 24">
+      <path d="M12 2l1.8 4.5L18 8l-4.2 1.5L12 14l-1.8-4.5L6 8l4.2-1.5z" />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <path d="M12 2l1.8 4.5L18 8l-4.2 1.5L12 14l-1.8-4.5L6 8l4.2-1.5z" />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <path d="M12 2l1.8 4.5L18 8l-4.2 1.5L12 14l-1.8-4.5L6 8l4.2-1.5z" />
+    </svg>
+  </div>
+  <!-- sparkles finsh -->
+
+  <!-- stats-container start -->
+  <div class="stats-container__r">
+    <div class="stat-block__r">
+      <div class="stat-value__r" data-target="8" data-suffix=" oy">0</div>
+      <div class="stat-label__r">Davomiyligi</div>
+    </div>
+    <div class="stat-block__r">
+      <div class="stat-value__r" data-target="3" data-suffix=" kun">0</div>
+      <div class="stat-label__r">Haftada</div>
+    </div>
+    <div class="stat-block__r">
+      <div class="stat-value__r" data-target="2" data-suffix=" soat">0</div>
+      <div class="stat-label__r">Dars soati</div>
+    </div>
+  </div>
+  <!--stats-container finish  -->
+
+  <!-- sparkles start -->
+  <div class="sparkles__r">
+    <!-- Yulduzcha SVG -->
+    <svg viewBox="0 0 24 24">
+      <path d="M12 2l1.8 4.5L18 8l-4.2 1.5L12 14l-1.8-4.5L6 8l4.2-1.5z" />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <path d="M12 2l1.8 4.5L18 8l-4.2 1.5L12 14l-1.8-4.5L6 8l4.2-1.5z" />
+    </svg>
+    <svg viewBox="0 0 24 24">
+      <path d="M12 2l1.8 4.5L18 8l-4.2 1.5L12 14l-1.8-4.5L6 8l4.2-1.5z" />
+    </svg>
+  </div>
+  <!-- sparkles finsh -->
+
+  <!--section 3 contenir start  -->
+  <div class="box_info_r">
+    <p><b>Kompyuter savodxonligi</b> — bu zamonaviy texnologiyalar bilan ishlay olish ko‘nikmasidir. Ushbu kurs sizni kundalik hayotda va ish jarayonida kerak bo‘ladigan asosiy dasturlar bilan tanishtiradi.</p>
+    <br />
+  
+    <h3><b>Microsoft Word</b></h3>
+    <p>Word dasturi matnli hujjatlar yaratish, tahrirlash va chiroyli ko‘rinishda saqlash uchun ishlatiladi. Kurs davomida siz:</p>
+    <ul>
+      <li>Oddiy matn yozishni va tahrirlashni;</li>
+      <li>Jadval va ro‘yxatlar tuzishni;</li>
+      <li>Hujjatlarga rasm va rasmlar joylashtirishni;</li>
+      <li>Hujjatlarni saqlash va chop etishni o‘rganasiz.</li>
+    </ul>
+  
+    <br />
+  
+    <h3><b>Microsoft Excel</b></h3>
+    <p>Excel dasturi sonli ma’lumotlar bilan ishlash, hisob-kitoblar qilish va jadval tuzish uchun ishlatiladi. Siz quyidagilarni o‘rganasiz:</p>
+    <ul>
+      <li>Jadvallar yaratish va ma’lumot kiritish;</li>
+      <li>Formulalar va avtomatik hisoblash;</li>
+      <li>Diagramma va grafiklar chizish;</li>
+      <li>Ma’lumotlarni tartiblash va tahlil qilish.</li>
+    </ul>
+  
+    <br />
+  
+    <h3><b>Microsoft PowerPoint</b></h3>
+    <p>PowerPoint dasturi taqdimotlar tayyorlash uchun ishlatiladi. Kurs davomida siz:</p>
+    <ul>
+      <li>Slaydlar yaratish;</li>
+      <li>Matn, rasm va video qo‘shish;</li>
+      <li>Animatsiya va o‘tish effektlari bilan ishlash;</li>
+      <li>Prezentatsiyalarni saqlash va namoyish qilishni o‘rganasiz.</li>
+    </ul>
+  
+    <br />
+  
+    <h3><b>Scratch</b></h3>
+    <p>Scratch — bu dasturlashni o‘rganuvchilar uchun mo‘ljallangan o‘yinli va qiziqarli platforma. U orqali siz:</p>
+    <ul>
+      <li>Dasturlash asoslari bilan tanishasiz;</li>
+      <li>Bloklar yordamida amallar bajarishni o‘rganasiz;</li>
+      <li>Oddiy o‘yinlar, animatsiyalar va loyihalar yaratishni boshlaysiz.</li>
+    </ul>
+  </div>
+  
+  <!-- section 3 contenir finsh -->
+
+
+
+  <!-- section 4 start  -->
+  <section class="section__r">
+    <h2>Kursda nimalarni o'rganasiz?</h2>
+    <div class="features__r">
+      <div class="feature-item__r"><div class="feature-icon__r">1</div><p>Kompyuterda Word dasturidan foydalanish asoslari</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">2</div><p>Excel dasturida jadval va hisob-kitoblar yaratish</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">3</div><p>PowerPoint yordamida taqdimot tayyorlash</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">4</div><p>Scratch dasturida sodda animatsiyalar va o‘yinlar yaratish</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">5</div><p>Matn, grafik va formulalar bilan ishlash ko‘nikmalari</p></div>
+      <div class="feature-item__r"><div class="feature-icon__r">6</div><p>Kompyuter savodxonligi va dasturlash asoslari</p></div>
+    </div>
+    
+
+
+    <a href="#" class="register-btn__r">Ro'yxatdan o'tish</a>
+  </section>
+
+  <!-- section 4 finsh  -->
+  <!-- marquee-container start -->
+
+  <div class="marquee-container__r">
+    <div class="marquee-track__r">
+      <span class="marquee-text__r">• To'g'ri tanlov qilish — o'z qo'lingizda!</span>
+      <span class="marquee-text__r">• To'g'ri tanlov qilish — o'z qo'lingizda!</span>
+      <span class="marquee-text__r">• To'g'ri tanlov qilish — o'z qo'lingizda!</span>
+      <span class="marquee-text__r">• To'g'ri tanlov qilish — o'z qo'lingizda!</span>
+      <span class="marquee-text__r">• To'g'ri tanlov qilish — o'z qo'lingizda!</span>
+      <span class="marquee-text__r">• To'g'ri tanlov qilish — o'z qo'lingizda!</span>
+
+    </div>
+  </div>
+  <!-- marquee-container finsh -->
+
+  <!-- section 5 start Dasturlash yo'nalishidagi bitiruvchilarimizning ishga kirish ko'rsatkichi -->
+  <section class="section5__r">
+    <h2 class="title__r">
+      Kompyuter savodxonligi yo'nalishidagi bitiruvchilarimizning
+      <span class="color2001ff__r">ishga kirish</span> ko'rsatkichi
+    </h2>
+    <p class="subtitle__r">2024–yil mart oyidan 2025–yil mart oyigacha olingan statistika</p>
+
+    <div class="stats-row__r">
+      <div class="stat-box__r">
+        <p class="stat-number__r">286 nafar</p>
+        <div class="hr__k"></div>
+        <p class="stat-label__r">Umumiy bitiruvchilar soni</p>
+      </div>
+      <div class="stat-box__r">
+        <p class="stat-number__r">234 nafar</p>
+        <div class="hr__r"></div>
+        <p class="stat-label__r">Ishli</p>
+      </div>
+      <div class="stat-box__r">
+        <p class="stat-number__r">81,8%</p>
+        <div class="hr__k"></div>
+        <p class="stat-label__r">Foiz ko'rsatkichida</p>
+      </div>
+    </div>
+
+    <hr class="divider__r">
+
+
+    <div class="double-arrow__k arrow__r">
+
+      <p class="arrow__r">»</p>
+    </div>
+  </section>
+  <!-- section 5 finsh Dasturlash yo'nalishidagi bitiruvchilarimizning ishga kirish ko'rsatkichi -->
+
+  <!-- pricing-section start -->
+  <section class="pricing-section__r">
+    <h2 class="main-title__r">Kurs narxi</h2>
+
+    <div class="card-row__r">
+      <div class="price-card__r">
+        <p class="card-title__r green__r">Oyma-oy to'lov</p>
+        <p class="price__r">280 ming so'm</p>
+        <p class="desc__r">Oyma-oy to'lov narxi: 320 000 ming so'm</p>
+        <button class="btn__r">Ro'yxatdan o'tish</button>
+      </div>
+      <div class="price-card__r">
+        <p class="card-title__r green__r">Individual </p>
+        <p class="price__r">3 milyon 800 ming</p>
+        <p class="desc__r">Ikkiga bo'lib to'lov qilish: 1 mln 900so'm, umumiy 3 mln 800 so'm</p>
+        <button class="btn__r">Ro'yxatdan o'tish</button>
+      </div>  
+    
+    </div>
+
+
+    </div>
+  </section>
+  <!-- pricing-section finsh -->
+
+  <!-- section 6 start -->
+
+  <section>
+    <div class="faq-item_wrap__r">
+
+      <h2 class="faq-title__r">Ko'p so'raladigan savollar</h2>
+
+      <div class="faq-item__r">
+        <div class="faq-question__r">
+          React kursida nimalar o‘rgatilinadi?
+
+          <i class="fa-solid fa-chevron-down faq-toggle__r"></i>
+        </div>
+        <div class="faq-answer__r lh__r">
+          React kursi 8 oy, haftada 3 kun 1 soat 50 daqiqa davom etadi.
+          Kurs davomida algoritmlar, dasturlash va uning mashhur yo‘nalishlari bo‘yicha tushuncha, HTML, CSS, SASS, BOOTSTRAP, JAVASRCIPT Core, JAVASCRIPT DOM, Native, REACT, REDUX, TYPESCRIPT kabi bilimlar va ko‘nikmalarga ega bo‘lasiz.
+        </div>
+      </div>
+
+      <div class="faq-item__r">
+        <div class="faq-question__r">
+          Bootcamp foundation va standart kurslar farqi <br> nimada?
+          <i class="fa-solid fa-chevron-down faq-toggle__r"></i>
+        </div>
+        <div class="faq-answer__r">
+          Markazimizda dasturlash darslari ikki xil usulda o'tiladi: bootcamp <br> va standart.
+          <br>
+          <br>
+          Standart kursi bu o'qiydigan yoki ishlaydigan ya'ni vaqti <br> chegaralangan o'quvchilar uchun bo'lib, haftada
+          3 kun 1 soat 30 <br> daqiqadan iborat.
+          <br>
+          <br>
+          Bootcamp kursi esa chuqurlashtirilgan kurs hisoblanadi. Shu <br> sohani mukammal o'rganish uchun kuniga 5-6
+          soat vaqt ajrata <br> oladigan o'quvchilar uchun bo'lib haftada 5 kun 3-4 soatdan <br> iborat.
+        </div>
+      </div>
+
+      <div class="faq-item__r">
+        <div class="faq-question__r">
+          "IT HOUSE" imtihon bilan qabul qiladimi?
+          <i class="fa-solid fa-chevron-down faq-toggle__r"></i>
+        </div>
+        <div class="faq-answer__r">
+          "IT HOUSE" da Dasturlash yo'nalishida intensiv (chuqurlashtirilgan) va odatiy kurslar mavjud bo'lib,
+          imtihonsiz o'qish mumkin.
+          <br>
+          <br>
+          Bundan tashqari, markazimizda yosh bo'yicha imtihon mavjud. Ya'ni 14 yoshdan 16 yoshgacha bo'lgan o'quvchilar
+          yosh chegarasi bo'yicha imtihon bilan qabul qilinadi.
+          <br>
+          <br>
+          40 yoshdan yuqori bo'lgan o'quvchilar O'quv bo'limi suhbatidan so'ng qabul qilinadi.
+
+        </div>
+      </div>
+
+
+      <div class="faq-item__r">
+        <div class="faq-question__r">
+          "IT HOUSE" qayerda joylashgan?
+          <i class="fa-solid fa-chevron-down faq-toggle__r"></i>
+        </div>
+        <div class="faq-answer__r">
+
+          "IT HOUSE" ning Andijon paytug' shahrida filiallari mavjud.
+          <br>
+          <br>
+          paytug' shahridagi filiallar manzili:
+          <br>
+          <br>
+
+          📍 paytug' shahri istirohat bog'i ro'parasida
+          <br>
+          <br>
+          📍 paytug' shahri kalsavoydagi miliy bank yonida
+          <br>
+          <br>
+
+          Call-markaz raqami: +998 90 762 27 27
+        </div>
+      </div>
+
+      <div class="faq-item__r">
+        <div class="faq-question__r">
+          "IT HOUSE" ish bilan ta'minlaydimi?
+          <i class="fa-solid fa-chevron-down faq-toggle__r"></i>
+        </div>
+        <div class="faq-answer__r">
+          <span class="color2001ff__r">IT HOUSE</span> intensiv (bootcamp) kurslarni bitirgan o'quvchilarga ish taklif
+          qilish kafolatini beradi.
+          <br>
+          <br>
+
+          Standart kurs bitiruvchilariga ish bilan ta'minlash kafolatini bermaydi. <br> Lekin <span
+            class="color2001ff__r">IT HOUSE</span> »da bitiruvchilarining o'rtacha 90-95 foizi doimiy tarzda ishli bo'lib
+          keladi. Buni biz har oy ijtimoiy tarmoqlarda statistika sifatida berib boramiz.
+        </div>
+      </div>
+
+      <div class="faq-item__r">
+        <div class="faq-question__r">
+          Yosh chegarasi qanday?
+          <i class="fa-solid fa-chevron-down faq-toggle__r"></i>
+        </div>
+        <div class="faq-answer__r">
+          Markazimizda 16 yoshdan 35 yoshgacha yosh chegarasi mavjud.
+          <br>
+          <br>
+          12 yoshdan 16 yoshgacha bo'lgan yoki 35 yoshdan yuqori bo'lgan o'quvchilar suhbat asosida o'qishlari mumkin
+          bo'ladi.
+        </div>
+      </div>
+
+      <div class="faq-item__r">
+        <div class="faq-question__r">
+          Kimlarga grant ajratiladi?
+          <i class="fa-solid fa-chevron-down faq-toggle__r"></i>
+
+        </div>
+        <div class="faq-answer__r">
+          Hozirda Yoshlar ishlar agentligi tomonidan "Kelajak kasblari" granti e'lon qilingan, shu grant asosida
+          o'qishingiz mumkin. Bunda Yoshlar ishlar agentligi tomonidan arizangiz tasdiqlansa, 6 oygacha 1 mln 300
+          minggacha bo'lgan kurs to'lovlari agentlik tomonidan qoplab beriladi.
+          .
+        </div>
+      </div>
+
+      <button class="btn__r btn2__r">Ro'yxatdan o'tish</button>
+    </div>
+  </section>
+
+  <!-- section 6 finsh -->
+
+  <!-- footer start -->
+
+  <div class="footer-nav__r">
+    <ul>
+      <li>Bosh sahifa</li>
+      <li>Dasturlash kurslari</li>
+      <li>Ingliz tili kurslari</li>
+      <li>Rus tili kurslari</li>
+      <li>Qabul bilan bog'lanish</li>
+    </ul>
+  </div>
+
+  <!-- Social Section -->
+  <div class="footer-social__r">
+    <p class="footer-text__r">Bizni ijtimoiy tarmoqlardagi sahifalarimizda kuzatib boring!</p>
+    <div class="social-icons__r">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+
+  <!-- footer finish -->
+
+  <script src="savotxonlik.js"></script>
+</body>
+
+</html>

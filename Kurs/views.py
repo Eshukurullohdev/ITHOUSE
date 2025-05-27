@@ -16,3 +16,7 @@ def kursRus(request):
 
 def kursFrontend(request):
     return render(request, 'kursFrontend.html')
+
+
+def kursSavodxonlik(request):
+    return render(request, 'kursSavodxonlik.html')
