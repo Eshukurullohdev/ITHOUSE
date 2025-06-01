@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: django-app
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi:application"
+    envVars:
+      - key: django-insecure-7itk+u%8flx^p4)ojj5tz=u4l&e%2&(vyse@^!oovbz&n52ak2
+        value: "true"
+      - key: django-debug
+        value: "true"
