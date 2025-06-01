@@ -1,11 +1,16 @@
 services:
   - type: web
-    name: django-app
+    name: ithouse
     env: python
-    buildCommand: "./build.sh"
-    startCommand: gunicorn ITHOUSE.wsgi:application
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py migrate
+      python manage.py collectstatic --no-input
+    startCommand: gunicorn base.wsgi:application
     envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: base.settings
       - key: django-insecure-7itk+u%8flx^p4)ojj5tz=u4l&e%2&(vyse@^!oovbz&n52ak2
-        value: "true"
-      - key: django-debug
-        value: "true"
+        value: your-secret-key-here
+      - key: DEBUG
+        value: 'False'
