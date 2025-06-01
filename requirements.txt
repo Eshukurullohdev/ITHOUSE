@@ -1,2 +1,2 @@
-gunicorn
+gunicorn base.wsgi:application
 whitenoise
