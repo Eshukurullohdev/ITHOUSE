@@ -10,7 +10,7 @@ services:
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: base.settings
-      - key: django-insecure-7itk+u%8flx^p4)ojj5tz=u4l&e%2&(vyse@^!oovbz&n52ak2
-        value: your-secret-key-here
+      - key: SECRET_KEY
+        value: django-insecure-7itk+u%8flx^p4)ojj5tz=u4l&e%2&(vyse@^!oovbz&n52ak2
       - key: DEBUG
         value: 'False'

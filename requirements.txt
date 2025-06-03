@@ -1,2 +1,5 @@
-gunicorn 
+Django>=4.2
+gunicorn
 whitenoise
+psycopg2-binary
+django
