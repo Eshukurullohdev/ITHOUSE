@@ -11,6 +11,6 @@ services:
       - key: DJANGO_SETTINGS_MODULE
         value: base.settings
       - key: SECRET_KEY
-        value: django-insecure-7itk+u%8flx^p4)ojj5tz=u4l&e%2&(vyse@^!oovbz&n52ak2
+        value: django-insecure-...
       - key: DEBUG
         value: 'False'
