@@ -970,6 +970,7 @@ form button {
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 15px;
+    gap: 8px;
     height: 150px;
     width: 500px;
     transition: 0.3s ease;
