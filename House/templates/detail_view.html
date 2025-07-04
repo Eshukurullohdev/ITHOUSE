@@ -1,0 +1,355 @@
+{% extends "base.html" %}
+{%  load static %}
+{%  block content  %}
+<style>
+    .ection-wrapper {
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+
+  }
+
+  .section-wrapper {
+    position: relative;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    padding: 3rem 0;
+  }
+  
+  .techer_wrapper {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+     }
+  
+  .main-content {
+    display: flex;
+    gap: 2.5rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .left-column {
+    width: 37%;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-icon {
+    background-image: url(image.png);
+    background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+    width: 5.5rem;
+    height: 5rem;
+    object-fit: cover;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .title {
+    font-size: 1.125rem;
+    color: #64748b;
+  }
+  
+  .profile-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  }
+  
+  .description {
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stat-box {
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3b82f6;
+  }
+  
+  .stat-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .section-block {
+    margin-bottom: 2rem;
+  }
+  
+  .section-block h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tag {
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  
+  .certifications {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .certifications li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: #374151;
+    margin-bottom: 0.75rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primary-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .primary-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .secondary-button {
+    background-color: white;
+    border: 2px solid #e5e7eb;
+    color: #374151;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .secondary-button:hover {
+    background-color: #f9fafb;
+  }
+  .dars-jarayoni{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    color: #2001ff;
+  }
+  video {
+    width: 100%;
+    border-radius:  20px;
+}
+  @media (max-width: 960px) {
+
+    video {
+        width: 100%;
+        border-radius:  20px;
+    }
+    .techer_video {
+        position: absolute;
+        top: 800px;
+
+        
+    }
+.main-content {
+    flex-direction: column;
+  }
+
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-column {
+      width: 100%;
+      padding-top: 60px;
+    }
+  
+    .right-column {
+      width: 100%;
+    }
+    .name {
+      font-size: 1rem;
+    }
+    .title {
+      font-size: 0.875rem;
+    }
+    .profile-card {
+      padding: 1rem;
+    }
+    .description {
+      font-size: 0.875rem;
+    }
+    .stat-number {
+      font-size: 1.25rem;
+    }
+    .stat-label {
+      font-size: 0.75rem;
+    }
+    .section-block h2 {
+      font-size: 1rem;
+    }
+    .tag {
+      font-size: 0.75rem;
+    }
+    .certifications li {
+      font-size: 0.875rem;
+  }
+  .primary-button {
+    font-size: 10px;
+  }
+  .secondary-button {
+    font-size: 0.875rem;
+  }
+  .techer_wrapper{
+    flex-direction: column;
+    left: 0;
+  }
+  }
+</style>
+ <section class="section-wrapper">
+    <div class="techer_wrapper">
+        <div class="container techer_info right">
+            <div class="main-content">
+
+                
+        <div class="techer_video  ">
+            <p class="dars-jarayoni">Dars jarayoni</p>
+            <video autoplay loop muted>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            
+    
+        </div>
+
+
+
+                <div class="left-column">
+                    <div class="profile-header">
+                        <div class="profile-icon">
+                            
+                        </div>
+                        <div>
+                            <h1 class="name">Shukurulloh Ergashev</h1>
+                            <p class="title">Frontend va Backend bo‘yicha mutaxassis</p>
+                        </div>
+              </div>
+              <div class="profile-card">
+                <p class="description">
+                    3 yillik tajribaga ega full stack dasturchi sifatida Shukurulloh Ergashev murakkab dasturiy loyihalarni sodda, samarali va tezkor tarzda amalga oshiradi. Uning ishlari ham texnik, ham dizayn jihatdan mukammal.
+                </p>
+                <div class="stats">
+                  <div class="stat-box">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Students Taught</div>
+                  </div>
+                </div>
+                <div class="section-block">
+                  <h2>Asosiy yo‘nalishlar</h2>
+                  <div class="tags">
+                    <span class="tag">Frontend</span>
+                    <span class="tag">Backend</span>
+                    <span class="tag">Ma’lumotlar bazasi</span>
+                    <span class="tag">REST API</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Data Analysis</span>
+                  </div>
+                  
+                </div>
+                <div class="section-block">
+                    <h2>Ta'lim va Sertifikatlar</h2>
+                    <ul class="certifications">
+                      <li><i class="ri-graduation-cap-line"></i> Kompyuter fanlari bo‘yicha bakalavr — Inha Universiteti, Toshkent</li>
+                      <li><i class="ri-award-line"></i> Full Stack Web Dasturlash Sertifikati — Meta / Coursera</li>
+                      <li><i class="ri-medal-line"></i> Git va GitHub bo‘yicha tajriba — Udemy</li>
+                      <li><i class="ri-code-s-slash-line"></i> JavaScript va React bo‘yicha chuqur o‘quv — FreeCodeCamp</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="buttons">
+                    <button class="primary-button">
+                      Darsga yozilish <i class="ri-calendar-line"></i>
+                    </button>
+                    <button class="secondary-button">
+                      Bog‘lanish <i class="ri-mail-line"></i>
+                    </button>
+                  </div>
+                  
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+
+    
+    </div>
+    
+
+  </section>
+{% endblock %}

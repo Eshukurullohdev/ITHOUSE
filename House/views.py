@@ -6,6 +6,9 @@ def home(request):
     videos = VideoUpload.objects.all()
     return render(request, 'home.html', {'oqituvchilar': oqituvchilar, 'videos': videos})
 
+def detail_view(request):
+    return render(request, "detail_view.html")
+
 
 
 
