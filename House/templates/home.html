@@ -73,20 +73,22 @@
 </div>
 
 <section class="team-section-t" id="team">
-        
-    <div class="carousel-wrapper-t">
-        <h2 class="teacherh2">Bizning Jamoa</h2>
-      <div class="carousel-track-t" id="carouselTrack-t">
-        {%  for oqituvchilar in oqituvchilar %}
-        <div class="card-t"><img src="{{ oqituvchilar.image.url }}" alt="">
-            <h3>{{ oqituvchilar.fullname }}</h3>
-            <p>{{ oqituvchilar.job }}</p>
+    <a href="{% url 'detail_view' %}">
+
+        <div class="carousel-wrapper-t">
+            <h2 class="teacherh2">Bizning Jamoa</h2>
+          <div class="carousel-track-t" id="carouselTrack-t">
+            {%  for oqituvchilar in oqituvchilar %}
+            <div class="card-t"><img src="{{ oqituvchilar.image.url }}" alt="">
+                <h3>{{ oqituvchilar.fullname }}</h3>
+                <p>{{ oqituvchilar.job }}</p>
+            </div>
+            {% endfor %}
+           
+            
+          </div>
         </div>
-        {% endfor %}
-       
-        
-      </div>
-    </div>
+    </a>
   </section>
 
 <div class="carousel-wrapper ">
